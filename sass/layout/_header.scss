@@ -40,7 +40,26 @@
 //  linear-gradient(to bottom,  50%,  #6e99ff 50%, #6e99ff)
     // background-position-x: 100p;
     background-origin: top left;
-    background-image: //radial-gradient(circle at 72% 65%, rgba($color-white, .87995374), rgba($color-white, .4774) 10%, rgba($color-black, .1824) 33%, rgba($color-black, .248) 70%, rgba($color-black, .34584) 90%, rgba($color-black, .5484) ), 
+    // background-attachment: fixed;
+    background-image: 
+    linear-gradient(110deg, rgba(0, 0, 0, .8) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
+    linear-gradient(17deg, rgba(0, 0, 0, .58) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
+    radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, .55) 4%, rgba($color-white, .4) 5%, rgba($color-white, .05) 9.5%, rgba($color-white, .15) 10%, rgba($color-white, 0) 11%, transparent),
+    radial-gradient(circle at 0 0, rgba($color-black, .75), rgba($color-black, .4) 25%, rgba($color-black, .3) 35%, rgba($color-black, .15) 40%, rgba($color-white, .1) 47%, rgba($color-white, .86) 48%, rgba($color-white, .99) 48%, rgba($color-white, .75) 50%, rgba($color-white, .5) 55%, transparent 79%),
+    // radial-gradient(ellipse at 79% 54%,  rgba($color-white, .85) 0.3%, rgba($color-white, .7) 5%, rgba($color-white, .56) 11%, 
+    // rgba($color-white, .5) 14%, rgba($color-white, .38) 18%, rgba($color-white, .25) 26%, rgba($color-white, .15) 34%, rgba($color-white, .1) 40%, transparent 50%),
+    linear-gradient(-170deg, rgba(240, 43, 63, .46) 1%, rgba(240, 43, 63, .05) 30%, transparent 40%),
+    repeating-linear-gradient(120deg,  rgba(199, 106, 106, 0.1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
+    repeating-linear-gradient(30deg,  rgba(0, 0, 0, .1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
+    // repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(255,255,255, .11) 0.8% )3
+    // repeating-linear-gradient(30deg,  rgba(255, 255, 255, .1), rgba(0, 0, 0, .2) 0.8% ),
+    
+    linear-gradient(140deg, #7fe391, #4d98b8, #710b99);
+    
+    
+    
+    
+    //radial-gradient(circle at 72% 65%, rgba($color-white, .87995374), rgba($color-white, .4774) 10%, rgba($color-black, .1824) 33%, rgba($color-black, .248) 70%, rgba($color-black, .34584) 90%, rgba($color-black, .5484) ), 
     // repeating-linear-gradient(-40deg, rgba($color-white, .13), rgba($color-white, .13) 2%,transparent 2%, transparent 5%),    
     // repeating-linear-gradient(50deg, transparent, transparent 2%, rgba($color-black, .23) 2%, rgba($color-black, .23) 8%),   
     // repeating-linear-gradient( transparent, transparent 5%, rgba($color-white, .1823) 5%, rgba($color-white, .1823) 9%, transparent 9%, rgba($color-white, .1823) 9%, rgba($color-white, .1823) 15%),   
@@ -71,41 +90,68 @@
     //                     rgba(#ffeaa3, .32) 45%, transparent 50%
     //                 ),
 
-                    repeating-linear-gradient(45deg,
-                            rgba(#ffeaa3, .1), transparent 2%, 
-                            rgba(#ffeaa3, .15) 2%, transparent 3.5%,
-                            rgba(#ffeaa3, .2) 3.5%, transparent 6%,
-                            rgba(#ffeaa3, .25) 6%, transparent 9%,
-                            rgba(#ffeaa3, .3) 9%, transparent  14%,
-                            rgba(#ffeaa3, .35) 14%, transparent  21%,
-                            rgba(#ffeaa3, .4) 21%, transparent 30%,
-                            rgba(#ffeaa3, .4) 30%, transparent 41%,
-                            rgba(#ffeaa3, .45) 41%, transparent 55%,
-                            rgba(#ffeaa3, .5) 55%, transparent 70%,
-                            rgba(#ffeaa3, .55) 70%, transparent 100%
-                        ),repeating-linear-gradient(135deg,
-                        rgba(#2e2e2e, .71), transparent 2%, 
-                        rgba(#2e2e2e, .63) 2%, transparent 3.5%,
-                        rgba(#2e2e2e, .51) 3.5%, transparent 6%,
-                        rgba(#2e2e2e, .45) 6%, transparent 9%,
-                        rgba(#2e2e2e, .4) 9%, transparent  14%,
-                        rgba(#2e2e2e, .38) 14%, transparent  21%,
-                        rgba(#2e2e2e, .35) 21%, transparent 30%,
-                        rgba(#2e2e2e, .3) 30%, transparent 41%,
-                        rgba(#2e2e2e, .2) 41%, transparent 55%,
-                        rgba(#2e2e2e, .3) 55%, transparent 70%,
-                        rgba(#2e2e2e, .2) 70%, transparent 100%
-                    ),
-    linear-gradient(157deg, rgb(61, 233, 176), rgb(216, 46, 193));
+    //                 repeating-linear-gradient(45deg,
+    //                         rgba(#ffeaa3, .1), transparent 2%, 
+    //                         rgba(#ffeaa3, .15) 2%, transparent 3.5%,
+    //                         rgba(#ffeaa3, .2) 3.5%, transparent 6%,
+    //                         rgba(#ffeaa3, .25) 6%, transparent 9%,
+    //                         rgba(#ffeaa3, .3) 9%, transparent  14%,
+    //                         rgba(#ffeaa3, .35) 14%, transparent  21%,
+    //                         rgba(#ffeaa3, .4) 21%, transparent 30%,
+    //                         rgba(#ffeaa3, .4) 30%, transparent 41%,
+    //                         rgba(#ffeaa3, .45) 41%, transparent 55%,
+    //                         rgba(#ffeaa3, .5) 55%, transparent 70%,
+    //                         rgba(#ffeaa3, .55) 70%, transparent 100%
+    //                     ),repeating-linear-gradient(135deg,
+    //                     rgba(#2e2e2e, .71), transparent 2%, 
+    //                     rgba(#2e2e2e, .63) 2%, transparent 3.5%,
+    //                     rgba(#2e2e2e, .51) 3.5%, transparent 6%,
+    //                     rgba(#2e2e2e, .45) 6%, transparent 9%,
+    //                     rgba(#2e2e2e, .4) 9%, transparent  14%,
+    //                     rgba(#2e2e2e, .38) 14%, transparent  21%,
+    //                     rgba(#2e2e2e, .35) 21%, transparent 30%,
+    //                     rgba(#2e2e2e, .3) 30%, transparent 41%,
+    //                     rgba(#2e2e2e, .2) 41%, transparent 55%,
+    //                     rgba(#2e2e2e, .3) 55%, transparent 70%,
+    //                     rgba(#2e2e2e, .2) 70%, transparent 100%
+    //                 ),
+    // linear-gradient(157deg, rgb(61, 233, 176), rgb(216, 46, 193));
 
+    background-size: cover;
     .header__heading-container {
 
         // display: none;
         // background: radial-gradient(rgba(0, 0 ,0,.2) 80%, rgba(0, 0 ,0,.2) 50%, transparent 10%, transparent);
         position: absolute;
-        top: 43%;
-        right: 3.5%;
-        width: 48%;
+        top: 44%;
+        right: 5%;
+        width: 40%;
+    }
+
+    .light-beam {
+        position: absolute;
+        width: 60%;
+        height:0px;
+        // background: linear-gradient(to left, rgba($color-white, .6) 30%, white 70%, rgba($color-white, .6));
+        border-radius: 50%;   
+        top: 65.5%;
+        left:14%;
+        transform: rotate(19deg);
+        box-shadow: 0 0 11px 1px rgba($color-white, .755);//, 0 0 20px 5px rgba($color-white, .3), 0 0 200px 2px rgba($color-white, .5925);
+
+        &::after {
+            position: absolute;
+            content:'';
+            border-radius: 50%;   
+            top: 6%;
+            left:47%;
+            width:10%;
+            height:8px;
+            box-shadow: 0 0 7px 3px rgba($color-white, .99), 0 0 27px 15px white;
+            background:white;
+            
+        transform: rotateZ(0deg);
+        }
     }
     
 }

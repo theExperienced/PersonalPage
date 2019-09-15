@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=  font-family:Abril+Fatface|Saira+Extra+Condensed|PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +8,24 @@ html {
   font-size: 62.5%; }
 
 .heading-primary {
+  perspective: 500px;
   text-align: center; }
   .heading-primary--main {
     position: relative;
-    font-family: 'Squada One', cursive;
-    text-transform: uppercase;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-transform: capitalize;
     display: inline-flex;
-    padding: 0.5rem 1.2rem;
-    letter-spacing: 4px;
-    text-shadow: 0 0 0 #628378, 1px 1px 0px rgba(255, 255, 255, 0.9864), -1px -1px 0px rgba(0, 0, 0, 0.98645);
+    padding: 0.5rem 2.2rem;
+    letter-spacing: 5px;
+    text-shadow: 0 0 0 #c7aa75, -1px -1px 1px #996403, -2px -1px 0px rgba(255, 255, 255, 0.8), -3px -2px 4px rgba(255, 255, 255, 0.6), -4px -3px 11px rgba(255, 255, 255, 0.500445), 2px 0px 0px rgba(0, 0, 0, 0.79487), 5px 1px 9px rgba(0, 0, 0, 0.647), 9px 1px 12px rgba(0, 0, 0, 0.39647);
     background: black;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 7.8rem;
-    line-height: 8.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.34); }
+    margin-bottom: 15px;
+    font-size: 5rem;
+    line-height: 6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.712); }
     .heading-primary--main::after {
       position: absolute;
       content: '';
@@ -31,33 +33,73 @@ html {
       width: 20px;
       height: 20px; }
   .heading-primary--sub {
+    display: block;
+    width: 66%;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg);
+    background: linear-gradient(to bottom, white 50%, silver #e4d05d, #bdab48);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0 #ff7070, -1px -1px 0px rgba(0, 0, 0, 0.9747), 1px 1px 0 rgba(255, 255, 255, 0.637);
     position: relative;
     letter-spacing: 5px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 2.23rem;
-    font-style: italic;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 2.83rem;
     text-transform: capitalize;
-    line-height: 5.3rem;
-    font-weight: 100;
-    color: rgba(0, 0, 0, 0.75);
-    display: block; }
+    line-height: 4.6rem;
+    font-weight: 600;
+    border-top: 1px solid rgba(138, 33, 33, 0.397);
+    box-shadow: inset 0 0 100px 9px white; }
+    .heading-primary--sub--special {
+      display: inline-block; }
     .heading-primary--sub::before {
       position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      bottom: -35%;
+      left: 0;
+      border-width: 8px 17px 8px;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) transparent transparent;
+      content: ''; }
+    .heading-primary--sub::after {
+      position: absolute;
+      bottom: -35%;
+      right: 0;
+      border-width: 8px 17px 8px;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.67) transparent transparent rgba(255, 255, 255, 0.67);
+      content: ''; }
 
 .header {
   position: relative;
   height: 42rem;
   box-shadow: inset 0 -9px 18px -10px rgba(0, 0, 0, 0.45);
   background-origin: top left;
-  background-image: repeating-linear-gradient(45deg, rgba(255, 234, 163, 0.1), transparent 2%, rgba(255, 234, 163, 0.15) 2%, transparent 3.5%, rgba(255, 234, 163, 0.2) 3.5%, transparent 6%, rgba(255, 234, 163, 0.25) 6%, transparent 9%, rgba(255, 234, 163, 0.3) 9%, transparent 14%, rgba(255, 234, 163, 0.35) 14%, transparent 21%, rgba(255, 234, 163, 0.4) 21%, transparent 30%, rgba(255, 234, 163, 0.4) 30%, transparent 41%, rgba(255, 234, 163, 0.45) 41%, transparent 55%, rgba(255, 234, 163, 0.5) 55%, transparent 70%, rgba(255, 234, 163, 0.55) 70%, transparent 100%), repeating-linear-gradient(135deg, rgba(46, 46, 46, 0.71), transparent 2%, rgba(46, 46, 46, 0.63) 2%, transparent 3.5%, rgba(46, 46, 46, 0.51) 3.5%, transparent 6%, rgba(46, 46, 46, 0.45) 6%, transparent 9%, rgba(46, 46, 46, 0.4) 9%, transparent 14%, rgba(46, 46, 46, 0.38) 14%, transparent 21%, rgba(46, 46, 46, 0.35) 21%, transparent 30%, rgba(46, 46, 46, 0.3) 30%, transparent 41%, rgba(46, 46, 46, 0.2) 41%, transparent 55%, rgba(46, 46, 46, 0.3) 55%, transparent 70%, rgba(46, 46, 46, 0.2) 70%, transparent 100%), linear-gradient(157deg, #3de9b0, #d82ec1); }
+  background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.8) 2%, rgba(0, 0, 0, 0.1) 30%, transparent 40%, transparent), linear-gradient(17deg, rgba(0, 0, 0, 0.58) 2%, rgba(0, 0, 0, 0.1) 30%, transparent 40%, transparent), radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, 0.55) 4%, rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0.05) 9.5%, rgba(255, 255, 255, 0.15) 10%, rgba(255, 255, 255, 0) 11%, transparent), radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.15) 40%, rgba(255, 255, 255, 0.1) 47%, rgba(255, 255, 255, 0.86) 48%, rgba(255, 255, 255, 0.99) 48%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 55%, transparent 79%), linear-gradient(-170deg, rgba(240, 43, 63, 0.46) 1%, rgba(240, 43, 63, 0.05) 30%, transparent 40%), repeating-linear-gradient(120deg, rgba(199, 106, 106, 0.1), rgba(255, 255, 255, 0.13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255, 255, 255, 0.11) 0.75%, rgba(0, 0, 0, 0.1) 0.8%), repeating-linear-gradient(30deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255, 255, 255, 0.11) 0.75%, rgba(0, 0, 0, 0.1) 0.8%), linear-gradient(140deg, #7fe391, #4d98b8, #710b99);
+  background-size: cover; }
   .header .header__heading-container {
     position: absolute;
-    top: 43%;
-    right: 3.5%;
-    width: 48%; }
+    top: 44%;
+    right: 5%;
+    width: 40%; }
+  .header .light-beam {
+    position: absolute;
+    width: 60%;
+    height: 0px;
+    border-radius: 50%;
+    top: 65.5%;
+    left: 14%;
+    transform: rotate(19deg);
+    box-shadow: 0 0 11px 1px rgba(255, 255, 255, 0.755); }
+    .header .light-beam::after {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      top: 6%;
+      left: 47%;
+      width: 10%;
+      height: 8px;
+      box-shadow: 0 0 7px 3px rgba(255, 255, 255, 0.99), 0 0 27px 15px white;
+      background: white;
+      transform: rotateZ(0deg); }

@@ -1,8 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=  font-family:Abril+Fatface|Saira+Extra+Condensed|PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap');
 
 .heading-primary {
-
+    perspective: 500px;
     text-align: center;
     // perspective:3420px;
     // perspective-origin: 100% 100%;
@@ -12,27 +12,29 @@
     
     &--main {
         position: relative;
-        font-family: 'Squada One', cursive;
-        text-transform: uppercase;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        text-transform: capitalize;
         display: inline-flex;
-        padding: 0.5rem 1.2rem;
-        letter-spacing: 4px;
+        padding: 0.5rem 2.2rem;
+        letter-spacing: 5px;
         // width: fill-content;
         // border: 1px solid gold;
         // letter-spacing: 3px;
         // color: rgb(212, 173, 173);
-        text-shadow: 0 0 0 rgb(98, 131, 120), 1px 1px 0px rgba($color-white, .9864), -1px -1px 0px rgba($color-black, .98645);
+        text-shadow:  0 0 0 rgb(199, 170, 117), -1px -1px 1px rgb(153, 100, 3),-2px -1px 0px rgba($color-white, .8), -3px -2px 4px rgba($color-white, .6), -4px -3px 11px rgba($color-white, .500445), 2px 0px 0px rgba($color-black, .794869998645), 5px 1px 9px rgba($color-black, .6469998645), 9px 1px 12px rgba($color-black, .396469998645);
         background: black; 
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        // margin-bottom: 5px;
+        margin-bottom: 15px;
         // 0px -1px 1px black, 0px 1px 1px white, 2px 5px 5px rgba(0, 0, 0 ,.4),
         // text-shadow:  2px 2px 3px rgba(0, 0, 0 ,.56), 4px 10px 5px rgba(0, 0, 0 ,.6), 6px 15px 15px rgba(0, 0, 0 ,.72), 8px 20px 2px rgba(0, 0, 0 ,.721);
 
-        font-size: 7.8rem;
-        line-height: 8.5rem;
-        border-bottom: 1px solid rgba($color-black, .34);
+        font-size: 5rem;
+        line-height: 6rem;
+        // border-radius: 29px;
+        // box-shadow: inset 0 -9px 10px -12px rgb(0, 0, 0), inset 0 -11px 10px -12px rgb(245, 14, 14), inset 0 -14px 10px -12px rgb(228, 193, 37), inset 0 -21px 10px -11px rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.712);
 
         // &::after {
         //     position: absolute;
@@ -64,17 +66,30 @@
     }
 
     &--sub {
+        display: block;
+        width: 66%;
+        margin:0 auto;
+        transform-style: preserve-3d;
+        transform: rotateX(30deg);
+        // -webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100% );
+        // clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100% );
+        background:linear-gradient(to bottom, white 50% ,silver rgb(228, 208, 93), rgb(189, 171, 72));//linear-gradient(-30deg, rgb(121, 121, 121) 5%, rgba(175, 175, 175, 0.996) 42%, rgba(175, 175, 175, 0.996) 46%, rgba(255, 255, 255, .8) 50%, rgba(175, 175, 175, 0.996) 54%, rgb(175, 175, 175) 58%, rgb(121, 121, 121)100%);
+        color:transparent;//rgb(0, 0, 0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-shadow: 0 0 0 rgb(255, 112, 112), -1px -1px 0px rgba(0, 0, 0, 0.9747), 1px 1px 0 rgba(255, 255, 255, 0.637);
         // transform: rotateY(-6deg);
         // transform-origin: 10% 100%;
         position: relative;
         letter-spacing: 5px;
         // z-index: 3;
         // font-family: 'Montserrat Alternates', sans-serif;
-        font-family: 'PT Sans Narrow', sans-serif;
-        font-size: 2.23rem; 
-        font-style: italic;
+        // font-family: 'PT Sans Narrow', sans-serif;  
+        font-family: 'Saira Extra Condensed', sans-serif;
+        // font-family: 'Abril Fatface';
+        font-size: 2.83rem; 
         text-transform: capitalize;
-        line-height: 5.3rem;
+        line-height: 4.6rem;
         // background-image: linear-gradient(70deg, silver, black, silver);
         // color: rgba($color-black, .6);
         // text-shadow: 1px -1px 1px rgb(240, 236, 236);
@@ -82,25 +97,68 @@
         // color: transparent;
         // background-clip: text;
         // -webkit-background-clip: text;
-        font-weight: 100;
-        color: rgba($color-black, .75);
+        font-weight: 600;
+        // color: rgba($color-black, .75);
+        // border-radius: 7.5rem 3.5rem 7.5rem 3.5rem;
+    //    box-shadow: 0 0 10px -2px purple,0 3px 20px -10px gold;
+    //    border: 1px solid rgb(236, 111, 236);
         // text-shadow: 2px 2px 2px rgba($color-white, .632583564),  4px 4px 2px rgba($color-white, .32583564);
-        display: block;
+        // display: flex;
+        // flex-shrink: 1;/
         // transform-style: preserve-3d;
         // transform: skewX(-9deg) rotateY(-10deg);
+        border-top: 1px solid rgba(138, 33, 33, 0.397);
+        box-shadow: inset 0 0 100px 9px white;
 
-        
+        &--special {
+            display: inline-block;
+            // background: 
+        }
 
         &::before {
+            // position: absolute;
+            // content:'';
+            // width:100%;
+            // height:100%;
+            // top: 50%;
+            // left: 50%;
+            // // background:rgba($color-white, .283564);
+            // // z-index: 2;
+            // transform: translate(-50%, -50%);
+
             position: absolute;
+            bottom: -35%;
+            left:0;
+            border-width: 8px 17px 8px;
+            border-style: solid;
+            border-color: rgba($color-white, .5) rgba($color-white, .5) transparent transparent;
             content:'';
-            width:100%;
-            height:100%;
-            top: 50%;
-            left: 50%;
-            // background:rgba($color-white, .283564);
-            // z-index: 2;
-            transform: translate(-50%, -50%);
+            // width:10px;
+            // height:10px;
+            // background:red;
+        }
+        
+        &::after {
+            // position: absolute;
+            // content:'';
+            // width:100%;
+            // height:100%;
+            // top: 50%;
+            // left: 50%;
+            // // background:rgba($color-white, .283564);
+            // // z-index: 2;
+            // transform: translate(-50%, -50%);
+
+            position: absolute;
+            bottom: -35%;
+            right:0;
+            border-width: 8px 17px 8px;
+            border-style: solid;
+            border-color: rgba($color-white, .67) transparent transparent rgba($color-white, .67);
+            content:'';
+            // width:10px;
+            // height:10px;
+            // background:red;
         }
     }
 }
