@@ -1,0 +1,111 @@
+.header {
+
+    position: relative;
+    height: 42rem;
+    box-shadow: inset 0 -9px 18px -10px rgba($color-black, .45);
+    // background: 
+    // repeating-linear-gradient(70deg, 
+    // rgba(187, 120, 187, 0.562), rgba(183, 171, 218, 0.61) 50%, rgba(187, 120, 187, 0.562) 100%
+    
+    
+    // );
+
+    // background-color: purple;
+    // radial-gradient(transparent 15%, rgba($color-black, .43))
+    // linear-gradient(-50deg, transparent, transparent 35%, rgba($color-black, .4794) 70%, rgba($color-black, .6794) 90%)
+
+
+    // radial-gradient(circle at 76% 50%, transparent 20%, rgba($color-black, .37) 70%, rgba($color-black, .647)),
+    //                     repeating-linear-gradient(45deg,
+    //                         rgba(#b8fff0, .1), transparent 6%, 
+    //                         rgba(#b8fff0, .2) 6%, transparent 17%,
+    //                         rgba(#b8fff0, .4) 17%, transparent 34%,
+    //                         rgba(#b8fff0, .4) 34%, transparent 58%,
+    //                         rgba(#b8fff0, .4) 58%, transparent 100%
+    //                     ),repeating-linear-gradient(135deg,
+    //                     rgba($color-black, .1), transparent 6%, 
+    //                     rgba($color-black, .15) 6%, transparent 17%,
+    //                     rgba($color-black, .2) 17%, transparent 34%,
+    //                     rgba($color-black, .25) 34%, transparent 58%,
+    //                     rgba($color-black, .3) 58%, transparent 100%
+    //                 )
+
+
+
+    // background-image: repeating-linear-gradient(70deg, #9c31ca 1%, #9c31ca 1.5%, #67168a 1.7%, transparent 1.7%,transparent 6%, #720e5c 6.2%)  
+    // ,repeating-linear-gradient(200deg, rgba($color-black, .13), transparent 2%)  
+    // ,linear-gradient(white,#d36eff )
+                   
+    //                ;  
+//  linear-gradient(to bottom,  50%,  #6e99ff 50%, #6e99ff)
+    // background-position-x: 100p;
+    background-origin: top left;
+    background-image: //radial-gradient(circle at 72% 65%, rgba($color-white, .87995374), rgba($color-white, .4774) 10%, rgba($color-black, .1824) 33%, rgba($color-black, .248) 70%, rgba($color-black, .34584) 90%, rgba($color-black, .5484) ), 
+    // repeating-linear-gradient(-40deg, rgba($color-white, .13), rgba($color-white, .13) 2%,transparent 2%, transparent 5%),    
+    // repeating-linear-gradient(50deg, transparent, transparent 2%, rgba($color-black, .23) 2%, rgba($color-black, .23) 8%),   
+    // repeating-linear-gradient( transparent, transparent 5%, rgba($color-white, .1823) 5%, rgba($color-white, .1823) 9%, transparent 9%, rgba($color-white, .1823) 9%, rgba($color-white, .1823) 15%),   
+    // repeating-linear-gradient(45deg,
+    //                         rgba(#ffeaa3, .1), rgba($color-white, .2) 2%, 
+    //                         rgba(#ffeaa3, .12) 2%, transparent 3.5%,
+    //                         rgba(#ffeaa3, .152) 3.5%, transparent 6%,
+    //                         rgba(#ffeaa3, .192) 6%, transparent 10%,
+    //                         rgba(#ffeaa3, .21) 10%, rgba($color-white, .2)  15%,
+    //                         rgba(#ffeaa3, .21) 15%, rgba($color-white, .2)  27%,
+    //                         rgba(#ffeaa3, .23) 30%, transparent 40%,
+    //                         rgba(#ffeaa3, .28) 40%, transparent 45%,
+    //                         rgba(#ffeaa3, .32) 45%, transparent 50%,
+    //                         rgba(#ffeaa3, .23) 50%, transparent 60%,
+    //                         rgba(#ffeaa3, .28) 60%, transparent 75%,
+    //                         rgba(#ffeaa3, .32) 75%, transparent 100%
+    //                     ),repeating-linear-gradient(135deg,
+    //                     rgba(#ffeaa3, .1), rgba($color-white, .2) 2%, 
+    //                     rgba(#ffeaa3, .2) 2%, transparent 3.5%,
+    //                     rgba(#ffeaa3, .2) 3.5%, transparent 6%,
+    //                     rgba(#ffeaa3, .2) 6%, transparent 10%,
+    //                     rgba(#ffeaa3, .2) 10%, rgba($color-white, .2)  19%,
+    //                     rgba(#ffeaa3, .2) 30%, transparent 40%,
+    //                     rgba(#ffeaa3, .2) 40%, transparent 45%,
+    //                     rgba(#ffeaa3, .2) 45%, transparent 50%,
+    //                     rgba(#ffeaa3, .23) 30%, transparent 40%,
+    //                     rgba(#ffeaa3, .28) 40%, transparent 45%,
+    //                     rgba(#ffeaa3, .32) 45%, transparent 50%
+    //                 ),
+
+                    repeating-linear-gradient(45deg,
+                            rgba(#ffeaa3, .1), transparent 2%, 
+                            rgba(#ffeaa3, .15) 2%, transparent 3.5%,
+                            rgba(#ffeaa3, .2) 3.5%, transparent 6%,
+                            rgba(#ffeaa3, .25) 6%, transparent 9%,
+                            rgba(#ffeaa3, .3) 9%, transparent  14%,
+                            rgba(#ffeaa3, .35) 14%, transparent  21%,
+                            rgba(#ffeaa3, .4) 21%, transparent 30%,
+                            rgba(#ffeaa3, .4) 30%, transparent 41%,
+                            rgba(#ffeaa3, .45) 41%, transparent 55%,
+                            rgba(#ffeaa3, .5) 55%, transparent 70%,
+                            rgba(#ffeaa3, .55) 70%, transparent 100%
+                        ),repeating-linear-gradient(135deg,
+                        rgba(#2e2e2e, .71), transparent 2%, 
+                        rgba(#2e2e2e, .63) 2%, transparent 3.5%,
+                        rgba(#2e2e2e, .51) 3.5%, transparent 6%,
+                        rgba(#2e2e2e, .45) 6%, transparent 9%,
+                        rgba(#2e2e2e, .4) 9%, transparent  14%,
+                        rgba(#2e2e2e, .38) 14%, transparent  21%,
+                        rgba(#2e2e2e, .35) 21%, transparent 30%,
+                        rgba(#2e2e2e, .3) 30%, transparent 41%,
+                        rgba(#2e2e2e, .2) 41%, transparent 55%,
+                        rgba(#2e2e2e, .3) 55%, transparent 70%,
+                        rgba(#2e2e2e, .2) 70%, transparent 100%
+                    ),
+    linear-gradient(157deg, rgb(61, 233, 176), rgb(216, 46, 193));
+
+    .header__heading-container {
+
+        // display: none;
+        // background: radial-gradient(rgba(0, 0 ,0,.2) 80%, rgba(0, 0 ,0,.2) 50%, transparent 10%, transparent);
+        position: absolute;
+        top: 43%;
+        right: 3.5%;
+        width: 48%;
+    }
+    
+}

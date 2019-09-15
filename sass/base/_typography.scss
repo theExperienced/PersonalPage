@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap');
+
+.heading-primary {
+
+    text-align: center;
+    // perspective:3420px;
+    // perspective-origin: 100% 100%;
+    span {
+
+    }
+    
+    &--main {
+        position: relative;
+        font-family: 'Squada One', cursive;
+        text-transform: uppercase;
+        display: inline-flex;
+        padding: 0.5rem 1.2rem;
+        letter-spacing: 4px;
+        // width: fill-content;
+        // border: 1px solid gold;
+        // letter-spacing: 3px;
+        // color: rgb(212, 173, 173);
+        text-shadow: 0 0 0 rgb(98, 131, 120), 1px 1px 0px rgba($color-white, .9864), -1px -1px 0px rgba($color-black, .98645);
+        background: black; 
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        // margin-bottom: 5px;
+        // 0px -1px 1px black, 0px 1px 1px white, 2px 5px 5px rgba(0, 0, 0 ,.4),
+        // text-shadow:  2px 2px 3px rgba(0, 0, 0 ,.56), 4px 10px 5px rgba(0, 0, 0 ,.6), 6px 15px 15px rgba(0, 0, 0 ,.72), 8px 20px 2px rgba(0, 0, 0 ,.721);
+
+        font-size: 7.8rem;
+        line-height: 8.5rem;
+        border-bottom: 1px solid rgba($color-black, .34);
+
+        // &::after {
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 50%;
+        //     content: '';
+        //     width: 100%;
+        //     height: 100%;
+        //     padding: 0.4rem;
+        //     border-radius: 4px;
+        //     box-shadow: 0 0 5px -1px rgba(0, 0, 0, .375);
+        //     transform: translate(-50%, -50%);
+        //     background:  rgba(192, 192, 192, 0.555);
+        //     // background:red;
+        // }
+        
+        // transform: rotateY(deg);
+        // transform-origin: 10% 10%;
+
+        &::after {
+
+            position: absolute;
+            content:'';
+            background-image: url(../img/spark.png);
+            // mix-blend-mode: multiply;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &--sub {
+        // transform: rotateY(-6deg);
+        // transform-origin: 10% 100%;
+        position: relative;
+        letter-spacing: 5px;
+        // z-index: 3;
+        // font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 2.23rem; 
+        font-style: italic;
+        text-transform: capitalize;
+        line-height: 5.3rem;
+        // background-image: linear-gradient(70deg, silver, black, silver);
+        // color: rgba($color-black, .6);
+        // text-shadow: 1px -1px 1px rgb(240, 236, 236);
+        // background: linear-gradient(to left,rgba($color-white, .245) 20%, transparent 80%, rgba($color-white, .245));
+        // color: transparent;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        font-weight: 100;
+        color: rgba($color-black, .75);
+        // text-shadow: 2px 2px 2px rgba($color-white, .632583564),  4px 4px 2px rgba($color-white, .32583564);
+        display: block;
+        // transform-style: preserve-3d;
+        // transform: skewX(-9deg) rotateY(-10deg);
+
+        
+
+        &::before {
+            position: absolute;
+            content:'';
+            width:100%;
+            height:100%;
+            top: 50%;
+            left: 50%;
+            // background:rgba($color-white, .283564);
+            // z-index: 2;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

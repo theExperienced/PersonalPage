@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.heading-primary {
+  text-align: center; }
+  .heading-primary--main {
+    position: relative;
+    font-family: 'Squada One', cursive;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 0.5rem 1.2rem;
+    letter-spacing: 4px;
+    text-shadow: 0 0 0 #628378, 1px 1px 0px rgba(255, 255, 255, 0.9864), -1px -1px 0px rgba(0, 0, 0, 0.98645);
+    background: black;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 7.8rem;
+    line-height: 8.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.34); }
+    .heading-primary--main::after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/spark.png);
+      width: 20px;
+      height: 20px; }
+  .heading-primary--sub {
+    position: relative;
+    letter-spacing: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.23rem;
+    font-style: italic;
+    text-transform: capitalize;
+    line-height: 5.3rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.75);
+    display: block; }
+    .heading-primary--sub::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.header {
+  position: relative;
+  height: 42rem;
+  box-shadow: inset 0 -9px 18px -10px rgba(0, 0, 0, 0.45);
+  background-origin: top left;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 234, 163, 0.1), transparent 2%, rgba(255, 234, 163, 0.15) 2%, transparent 3.5%, rgba(255, 234, 163, 0.2) 3.5%, transparent 6%, rgba(255, 234, 163, 0.25) 6%, transparent 9%, rgba(255, 234, 163, 0.3) 9%, transparent 14%, rgba(255, 234, 163, 0.35) 14%, transparent 21%, rgba(255, 234, 163, 0.4) 21%, transparent 30%, rgba(255, 234, 163, 0.4) 30%, transparent 41%, rgba(255, 234, 163, 0.45) 41%, transparent 55%, rgba(255, 234, 163, 0.5) 55%, transparent 70%, rgba(255, 234, 163, 0.55) 70%, transparent 100%), repeating-linear-gradient(135deg, rgba(46, 46, 46, 0.71), transparent 2%, rgba(46, 46, 46, 0.63) 2%, transparent 3.5%, rgba(46, 46, 46, 0.51) 3.5%, transparent 6%, rgba(46, 46, 46, 0.45) 6%, transparent 9%, rgba(46, 46, 46, 0.4) 9%, transparent 14%, rgba(46, 46, 46, 0.38) 14%, transparent 21%, rgba(46, 46, 46, 0.35) 21%, transparent 30%, rgba(46, 46, 46, 0.3) 30%, transparent 41%, rgba(46, 46, 46, 0.2) 41%, transparent 55%, rgba(46, 46, 46, 0.3) 55%, transparent 70%, rgba(46, 46, 46, 0.2) 70%, transparent 100%), linear-gradient(157deg, #3de9b0, #d82ec1); }
+  .header .header__heading-container {
+    position: absolute;
+    top: 43%;
+    right: 3.5%;
+    width: 48%; }
