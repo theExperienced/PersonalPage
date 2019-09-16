@@ -1,8 +1,8 @@
 .header {
 
     position: relative;
-    height: 42rem;
-    box-shadow: inset 0 -9px 18px -10px rgba($color-black, .45);
+    height: 46.2rem;
+    // box-shadow: inset 0 -9px 18px -10px rgba($color-black, .45);
     // background: 
     // repeating-linear-gradient(70deg, 
     // rgba(187, 120, 187, 0.562), rgba(183, 171, 218, 0.61) 50%, rgba(187, 120, 187, 0.562) 100%
@@ -35,26 +35,32 @@
     // background-image: repeating-linear-gradient(70deg, #9c31ca 1%, #9c31ca 1.5%, #67168a 1.7%, transparent 1.7%,transparent 6%, #720e5c 6.2%)  
     // ,repeating-linear-gradient(200deg, rgba($color-black, .13), transparent 2%)  
     // ,linear-gradient(white,#d36eff )
-                   
+    // border-bottom: 1px solid rgb(71, 71, 71);
+    //       box-shadow: 0 -9px 30px 3px rgba(0, 0, 0, 0.527);         
     //                ;  
 //  linear-gradient(to bottom,  50%,  #6e99ff 50%, #6e99ff)
     // background-position-x: 100p;
     background-origin: top left;
-    // background-attachment: fixed;
-    background-image: 
-    linear-gradient(110deg, rgba(0, 0, 0, .8) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
-    linear-gradient(17deg, rgba(0, 0, 0, .58) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
-    radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, .55) 4%, rgba($color-white, .4) 5%, rgba($color-white, .05) 9.5%, rgba($color-white, .15) 10%, rgba($color-white, 0) 11%, transparent),
-    radial-gradient(circle at 0 0, rgba($color-black, .75), rgba($color-black, .4) 25%, rgba($color-black, .3) 35%, rgba($color-black, .15) 40%, rgba($color-white, .1) 47%, rgba($color-white, .86) 48%, rgba($color-white, .99) 48%, rgba($color-white, .75) 50%, rgba($color-white, .5) 55%, transparent 79%),
+    // background-attachment: fixed
+    background-image: //linear-gradient(3deg, rgba(0, 0, 0, 0.667) 2%, rgba(0, 0, 0, 0.437) 6%,  rgba(0, 0, 0, 0.171) 16%, transparent 25%),
+    // linear-gradient(110deg, rgba(0, 0, 0, .8) 2%, rgba(206, 235, 43, 0.1) 30%, transparent 40%, transparent),
+    // linear-gradient(17deg, rgba(0, 0, 0, .58) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
+    radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, .55) 4%, rgba($color-white, .5) 5%, rgba($color-white, .05) 9.5%, rgba($color-white, .15) 10%, rgba($color-white, 0) 11%, transparent),
+    radial-gradient(circle at 0 0, rgba($color-black, .95), rgba($color-black, .6) 15%, rgba($color-black, .2) 35%, rgba($color-black, .1) 39%, rgba($color-black, 0) 42%, rgba($color-white, .1) 44%, rgba($color-white, .45) 46.5%, rgba($color-white, .75) 48%, rgba($color-white, .99) 48%, rgba($color-white, .7) 50%, rgba($color-white, .4) 55%, transparent 75%),
+    
     // radial-gradient(ellipse at 79% 54%,  rgba($color-white, .85) 0.3%, rgba($color-white, .7) 5%, rgba($color-white, .56) 11%, 
     // rgba($color-white, .5) 14%, rgba($color-white, .38) 18%, rgba($color-white, .25) 26%, rgba($color-white, .15) 34%, rgba($color-white, .1) 40%, transparent 50%),
-    linear-gradient(-170deg, rgba(240, 43, 63, .46) 1%, rgba(240, 43, 63, .05) 30%, transparent 40%),
+    
+    radial-gradient(circle at 0 0, rgb(80, 8, 85) 28%, rgb(255, 127, 104) 48%, transparent 48%),
     repeating-linear-gradient(120deg,  rgba(199, 106, 106, 0.1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
     repeating-linear-gradient(30deg,  rgba(0, 0, 0, .1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
+    
     // repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(255,255,255, .11) 0.8% )3
     // repeating-linear-gradient(30deg,  rgba(255, 255, 255, .1), rgba(0, 0, 0, .2) 0.8% ),
-    
-    linear-gradient(140deg, #7fe391, #4d98b8, #710b99);
+
+    // linear-gradient(-170deg, rgba(27, 255, 122, .7) 6%, rgba(4, 245, 105, 0.356) 25%, transparent 40%),
+    linear-gradient(-50deg, rgb(3, 92, 33) 5%, transparent 40%),
+    linear-gradient(0deg, #4394fd , #9100ca);
     
     
     
@@ -117,7 +123,21 @@
     //                 ),
     // linear-gradient(157deg, rgb(61, 233, 176), rgb(216, 46, 193));
 
+    box-shadow: 0 2px 14px 2px rgba($color-black, .45);
     background-size: cover;
+
+    &__bottom-layer {
+
+        content:'';
+        position: absolute;
+        width:100%;
+        height:10%;
+        border-top: 1px solid rgb(255, 255, 255);
+        background:linear-gradient(to bottom,rgb(199, 199, 199) 1%, rgb(165, 165, 165) 4%, rgb(37, 21, 21) 8%,
+        rgb(27, 21, 37)91%, rgb(165, 165, 165) 95%, rgb(199, 199, 199) 99%);
+        bottom: 0;
+    }
+
     .header__heading-container {
 
         // display: none;
@@ -137,7 +157,7 @@
         top: 65.5%;
         left:14%;
         transform: rotate(19deg);
-        box-shadow: 0 0 11px 1px rgba($color-white, .755);//, 0 0 20px 5px rgba($color-white, .3), 0 0 200px 2px rgba($color-white, .5925);
+        box-shadow: 0 -3px 12px 1px rgba($color-white, .35);//, 0 0 20px 5px rgba($color-white, .3), 0 0 200px 2px rgba($color-white, .5925);
 
         &::after {
             position: absolute;
@@ -147,7 +167,7 @@
             left:47%;
             width:10%;
             height:8px;
-            box-shadow: 0 0 7px 3px rgba($color-white, .99), 0 0 27px 15px white;
+            box-shadow: 0 0 7px 3px rgba($color-white, .99), 0 0 37px 5px white;
             background:white;
             
         transform: rotateZ(0deg);
