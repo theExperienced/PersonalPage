@@ -1,0 +1,68 @@
+.row {
+
+    margin: 0 auto;
+
+    @include clearfix;
+
+    [class*="col-"] {
+        float: left;
+        
+    }
+
+    &--contact-me-form {
+        margin-bottom: 3rem;
+    }
+
+    &__col-1-of-2 {
+
+        
+        &--about {
+
+            width: 50%;
+            padding: 7rem 0;
+    
+            &:nth-child(1) {
+                padding-right: 10rem;               //maybe move col-1-of-2 to components
+            }
+    
+            &:nth-child(2) {
+                padding-left: 10rem;
+            }
+    
+            &:not(:last-child) {
+    
+                border-right: 1px solid rgba(0, 0, 0, 0.15);
+            }
+
+            
+        }
+
+        
+        &--contact-me-form {
+                
+            width: 45%;
+            // background:green;
+            position: relative;
+            // margin: 0 
+            
+            &:nth-child(1) {
+                // padding-right: 10rem;               //maybe move col-1-of-2 to components
+            }
+    
+            &:nth-child(2) {
+                // padding-left: 10rem;
+                float:right ;
+            }
+    
+            &:not(:last-child) {
+                
+                // margin-right: 10%;
+                // border-right: 1px solid rgba(0, 0, 0, 0.15);
+            }
+
+            
+        }
+
+        
+    }
+}

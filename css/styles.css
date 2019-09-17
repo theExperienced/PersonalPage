@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=  font-family:Abril+Fatface|Saira+Extra+Condensed|PT+Sans+Narrow|Montserrat+Alternates|Montserrat+Subrayada|Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=  font-family:Abril+Fatface|Saira+Extra+Condensed|PT+Sans+Narrow|Montserrat+Alternates|Montserrat|Montserrat+Subrayada|Squada+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,18 @@
 
 html {
   font-size: 62.5%; }
+
+body {
+  position: relative; }
+
+ul {
+  list-style-type: none; }
+
+a:link,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none; }
 
 .heading-primary {
   perspective: 500px;
@@ -17,21 +29,23 @@ html {
     display: inline-flex;
     padding: 0.5rem 2.2rem;
     letter-spacing: 5px;
-    text-shadow: 0 0 0 #c7aa75, -1px -1px 1px #996403, -2px -1px 0px rgba(255, 255, 255, 0.8), -3px -2px 4px rgba(255, 255, 255, 0.6), -4px -3px 11px rgba(255, 255, 255, 0.500445), 2px 0px 0px rgba(0, 0, 0, 0.79487), 5px 1px 9px rgba(0, 0, 0, 0.647), 9px 1px 12px rgba(0, 0, 0, 0.39647);
+    text-shadow: 0 0 0 #c7aa75, -1px -1px 1px #996403, -2px -1px 0px rgba(255, 255, 255, 0.8), -3px -1px 8px rgba(255, 255, 255, 0.6), -4px -3px 11px rgba(255, 255, 255, 0.500445), 2px 0px 0px rgba(0, 0, 0, 0.79487), 6px -2px 9px rgba(0, 0, 0, 0.45), 9px -2px 8px rgba(0, 0, 0, 0.35), 11px -3px 4px rgba(0, 0, 0, 0.25), 18px -3px 3px rgba(0, 0, 0, 0.2), 21px -4px 2px rgba(0, 0, 0, 0.1);
     background: black;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     margin-bottom: 15px;
     font-size: 5rem;
-    line-height: 6rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.712); }
+    line-height: 6.5rem; }
     .heading-primary--main::after {
       position: absolute;
       content: '';
-      background-image: url(../img/spark.png);
-      width: 20px;
-      height: 20px; }
+      width: 45%;
+      bottom: 0;
+      border-top: 1px solid #300101;
+      border-bottom: 1px solid #a0a0a0;
+      left: 50%;
+      transform: translateX(-50%); }
   .heading-primary--sub {
     display: block;
     width: 66%;
@@ -42,7 +56,7 @@ html {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    text-shadow: 0 0 0 #ff7070, -1px -1px 0px rgba(0, 0, 0, 0.9747), 1px 1px 0 rgba(255, 255, 255, 0.637);
+    text-shadow: 0 0 0 #af777f, -1px -1px 0px rgba(0, 0, 0, 0.9747), 1px 1px 0 rgba(255, 255, 255, 0.637);
     position: relative;
     letter-spacing: 5px;
     font-family: 'Saira Extra Condensed', sans-serif;
@@ -51,7 +65,7 @@ html {
     line-height: 4.6rem;
     font-weight: 600;
     border-top: 1px solid rgba(138, 33, 33, 0.397);
-    box-shadow: inset 0 0 100px 9px white; }
+    box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.85), inset 0 0 100px 9px white; }
     .heading-primary--sub--special {
       display: inline-block; }
     .heading-primary--sub::before {
@@ -71,13 +85,83 @@ html {
       border-color: rgba(255, 255, 255, 0.67) transparent transparent rgba(255, 255, 255, 0.67);
       content: ''; }
 
+.copyrights-container__copyrights {
+  text-transform: capitalize;
+  font-weight: 100;
+  min-width: 45%;
+  text-align: center;
+  line-height: 9rem;
+  margin: 0 auto;
+  font-size: 1.9rem;
+  letter-spacing: 0.9rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #bebcaa;
+  text-shadow: -1px -1px 0px black, 1px 1px 2px #50440e; }
+
+.h2-container {
+  text-align: center;
+  margin-bottom: 6.5rem; }
+
+.h2 {
+  position: relative;
+  font-weight: 100;
+  display: inline;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.12);
+  font-family: 'Montserrat'; }
+  .h2::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    left: 50%;
+    bottom: -21%;
+    transform: translate(-50%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.about__list {
+  font-size: 3rem;
+  text-align: left;
+  font-family: 'Montserrat'; }
+  .about__list ul li {
+    position: relative;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+    padding-left: 6rem;
+    color: #553012;
+    font-size: 1.8rem; }
+    .about__list ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1.5rem;
+      transform: translateY(-50%);
+      border-radius: 250px;
+      width: 1rem;
+      height: 1rem;
+      background: conic-gradient(from 0.15turn, rgba(0, 0, 0, 0.1) 8%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9));
+      background-color: black; }
+    .about__list ul li .francine-link {
+      font-weight: 900;
+      color: #d52fff; }
+    .about__list ul li blockquote {
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: .9rem; }
+
 .header {
   position: relative;
-  height: 42rem;
-  box-shadow: inset 0 -9px 18px -10px rgba(0, 0, 0, 0.45);
-  background-origin: top left;
-  background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.8) 2%, rgba(0, 0, 0, 0.1) 30%, transparent 40%, transparent), linear-gradient(17deg, rgba(0, 0, 0, 0.58) 2%, rgba(0, 0, 0, 0.1) 30%, transparent 40%, transparent), radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, 0.55) 4%, rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0.05) 9.5%, rgba(255, 255, 255, 0.15) 10%, rgba(255, 255, 255, 0) 11%, transparent), radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.15) 40%, rgba(255, 255, 255, 0.1) 47%, rgba(255, 255, 255, 0.86) 48%, rgba(255, 255, 255, 0.99) 48%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 55%, transparent 79%), linear-gradient(-170deg, rgba(240, 43, 63, 0.46) 1%, rgba(240, 43, 63, 0.05) 30%, transparent 40%), repeating-linear-gradient(120deg, rgba(199, 106, 106, 0.1), rgba(255, 255, 255, 0.13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255, 255, 255, 0.11) 0.75%, rgba(0, 0, 0, 0.1) 0.8%), repeating-linear-gradient(30deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255, 255, 255, 0.11) 0.75%, rgba(0, 0, 0, 0.1) 0.8%), linear-gradient(140deg, #7fe391, #4d98b8, #710b99);
+  height: 46.2rem;
+  background-image: radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, 0.55) 4%, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.05) 9.5%, rgba(255, 255, 255, 0.15) 10%, rgba(255, 255, 255, 0) 11%, transparent), radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.1) 37%, rgba(255, 255, 255, 0.25) 42%, rgba(255, 255, 255, 0.45) 44%, rgba(255, 255, 255, 0.9) 47%, rgba(255, 255, 255, 0.95) 48%, rgba(255, 255, 255, 0.99) 48%, rgba(255, 255, 255, 0.65) 50%, rgba(255, 255, 255, 0.45) 65%, transparent 85%), radial-gradient(circle at 0 0, #4e0453 26%, #ee1d1d 48%, transparent 48%), repeating-linear-gradient(120deg, rgba(199, 106, 106, 0.1), rgba(255, 255, 255, 0.13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255, 255, 255, 0.11) 0.75%, rgba(0, 0, 0, 0.1) 0.8%), repeating-linear-gradient(30deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255, 255, 255, 0.11) 0.75%, rgba(0, 0, 0, 0.1) 0.8%), linear-gradient(-30deg, rgba(70, 187, 129, 0.8) 5%, transparent 45%), linear-gradient(0deg, #4394fd, #9100ca);
+  box-shadow: inset 0 -5px 15px -2px rgba(0, 0, 0, 0.65);
   background-size: cover; }
+  .header__bottom-layer {
+    content: '';
+    width: 100%;
+    margin-bottom: 10rem;
+    background-color: silver;
+    background-image: linear-gradient(to-bottom, #c91b1b, transparent); }
   .header .header__heading-container {
     position: absolute;
     top: 44%;
@@ -91,7 +175,7 @@ html {
     top: 65.5%;
     left: 14%;
     transform: rotate(19deg);
-    box-shadow: 0 0 11px 1px rgba(255, 255, 255, 0.755); }
+    box-shadow: 0 -3px 12px 1px rgba(255, 255, 255, 0.35); }
     .header .light-beam::after {
       position: absolute;
       content: '';
@@ -100,6 +184,146 @@ html {
       left: 47%;
       width: 10%;
       height: 8px;
-      box-shadow: 0 0 7px 3px rgba(255, 255, 255, 0.99), 0 0 27px 15px white;
+      box-shadow: 0 0 7px 3px rgba(255, 255, 255, 0.99), 0 0 37px 5px white;
       background: white;
       transform: rotateZ(0deg); }
+
+.footer {
+  height: 9rem;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 2%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.95)), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0.4%, rgba(255, 255, 255, 0.1) 0.8%), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0.4%, rgba(255, 255, 255, 0.1) 0.8%), linear-gradient(-10deg, #4b0a1a 50%, #490404 60%);
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 1px 8px 2px black; }
+
+.row {
+  margin: 0 auto; }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class*="col-"] {
+    float: left; }
+  .row--contact-me-form {
+    margin-bottom: 3rem; }
+  .row__col-1-of-2--about {
+    width: 50%;
+    padding: 7rem 0; }
+    .row__col-1-of-2--about:nth-child(1) {
+      padding-right: 10rem; }
+    .row__col-1-of-2--about:nth-child(2) {
+      padding-left: 10rem; }
+    .row__col-1-of-2--about:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.15); }
+  .row__col-1-of-2--contact-me-form {
+    width: 45%;
+    position: relative; }
+    .row__col-1-of-2--contact-me-form:nth-child(2) {
+      float: right; }
+
+.main {
+  margin: 0 auto; }
+  .main__section {
+    margin: 0 auto;
+    margin-bottom: 15rem; }
+    .main__section--about {
+      width: 85%; }
+    .main__section--works {
+      background: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 30%, transparent 30%), linear-gradient(20deg, rgba(255, 255, 255, 0.1) 10%, transparent 10%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(28deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(38deg, rgba(255, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(138deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(-52deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(40deg, rgba(255, 255, 255, 0.1) 80%, transparent 80%), linear-gradient(-40deg, rgba(0, 0, 0, 0.1) 80%, transparent 80%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(80deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(110deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 60%, transparent 60%), linear-gradient(50deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%), conic-gradient(at 45% 45%, #1e55d9 10%, #540bba 25%, #ba0b42 70%, #1e55d9);
+      background-attachment: fixed;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid #bdb2b2; }
+      .main__section--works::before {
+        position: absolute;
+        top: 50%;
+        content: '';
+        width: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 110%;
+        border-radius: 10%;
+        box-shadow: inset 0 0px 80px 8px rgba(0, 0, 0, 0.9); }
+    .main__section--contact-me {
+      width: 55%;
+      margin-bottom: 0;
+      padding-bottom: 25rem; }
+      .main__section--contact-me .form-container {
+        padding: 4rem;
+        border-radius: 5px;
+        box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 184, 137, 0.51); }
+
+.contact-me-form {
+  position: relative;
+  margin: 0 auto; }
+  .contact-me-form__section {
+    position: relative;
+    border: none; }
+  .contact-me-form__field {
+    border-radius: 3px;
+    z-index: 1;
+    background: white;
+    padding: 0 0.9rem;
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    transition: all .11s ease-in;
+    border: 1px solid rgba(255, 184, 137, 0.85);
+    box-shadow: inset 0 0 0 0px rgba(184, 155, 117, 0.95), 0 0 5px 1px rgba(0, 0, 0, 0.175); }
+    .contact-me-form__field:focus, .contact-me-form__field:active {
+      background: black;
+      color: #7ef3b3;
+      border: 1px solid white;
+      box-shadow: inset 0 0 2px 2px rgba(255, 255, 255, 0.65), inset 0 0 6px 2px rgba(255, 255, 255, 0.75), 0 0 15px 3px rgba(182, 79, 47, 0.7); }
+    .contact-me-form__field--name, .contact-me-form__field--mail {
+      height: 5rem; }
+    .contact-me-form__field--textarea {
+      font-size: 2rem;
+      padding: 0.9rem;
+      resize: vertical;
+      overflow: auto;
+      height: 15rem; }
+  .contact-me-form__label {
+    color: black;
+    font-family: 'Montserrat';
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 100;
+    left: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    transform-origin: top;
+    transition: all .2s linear; }
+    .contact-me-form__label.faded-out {
+      transform: scale(0.1);
+      opacity: 0; }
+    .contact-me-form__label.faded {
+      display: none; }
+
+.bg-image {
+  width: 100%;
+  height: 10vh;
+  background-attachment: fixed; }
+  .bg-image--blurred {
+    filter: blur(4px);
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 30%, transparent 30%), linear-gradient(20deg, rgba(255, 255, 255, 0.1) 10%, transparent 10%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(28deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(38deg, rgba(255, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(138deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(-52deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(40deg, rgba(255, 255, 255, 0.1) 80%, transparent 80%), linear-gradient(-40deg, rgba(0, 0, 0, 0.1) 80%, transparent 80%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(80deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(110deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 60%, transparent 60%), linear-gradient(50deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%), conic-gradient(at 45% 45%, #1e55d9 10%, #540bba 25%, #ba0b42 70%, #1e55d9); }
+
+.main {
+  margin: 0 auto; }
+
+.about-section {
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  width: 85%; }
+
+.works-section {
+  height: 400px;
+  background: silver; }
+
+.contact-me-section {
+  height: 500px; }

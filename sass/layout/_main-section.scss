@@ -1,0 +1,115 @@
+
+
+.main {
+    // width: 85%;
+    // background-color: red;
+    // perspective: 1000px;
+    margin: 0 auto;
+    // padding-top: 10rem;
+
+    &__section {
+
+        margin: 0 auto;
+        margin-bottom: 15rem;
+
+        &--about {
+
+            width: 85%;
+
+        }
+    
+        &--works {
+
+
+            
+            
+            
+            
+      
+
+
+            background:
+                // linear-gradient(rgba($color-black, .2), rgba($color-black, .6)),
+                linear-gradient(10deg, rgba($color-black, .1) 30%, transparent 30% ),
+                linear-gradient(20deg, rgba($color-white, .1) 10%, transparent 10% ),
+                linear-gradient(8deg, rgba($color-black, .1) 40%, transparent 40% ),
+                linear-gradient(28deg, rgba($color-black, .1) 40%, transparent 40% ),
+                linear-gradient(38deg, rgba(red, .1) 40%, transparent 40% ),
+                linear-gradient(138deg, rgba($color-black, .1) 40%, transparent 40% ),
+                linear-gradient(8deg, rgba($color-black, .1) 60%, transparent 60% ),
+                linear-gradient(-52deg, rgba($color-black, .1) 60%, transparent 60% ),
+                linear-gradient(40deg, rgba($color-white, .1) 80%, transparent 80% ),
+                linear-gradient(-40deg, rgba($color-black, .1) 80%, transparent 80% ),
+                linear-gradient(70deg, rgba($color-white, .1) 70%, transparent 70% ),
+                linear-gradient(80deg, rgba($color-white, .1) 70%, transparent 70% ),
+                linear-gradient(90deg, rgba($color-white, .1) 70%, transparent 70% ),
+                linear-gradient(110deg, rgba($color-white, .1) 70%, transparent 70% ),
+                linear-gradient(70deg, rgba($color-white, .1) 60%, transparent 60% ),
+                linear-gradient(50deg, rgba($color-white, .1) 50%, transparent 50% ),
+                conic-gradient(at 45% 45%, #1e55d9 10%,#540bba 25%, #ba0b42 70%, #1e55d9)
+            ;
+            // filter: brightness(100%);
+            // linear-gradient(to bottom, rgba($color-black, 0.2) 1%, transparent 8%, transparent 92%, rgba($color-black, 0.2) 99%),
+            // linear-gradient(156deg, rgba($color-black, 0.8),rgb(172, 143, 143)),
+            // linear-gradient(red, purple);
+            background-attachment: fixed;
+
+    
+            height:400px;
+            // box-shadow:inset 0 5px 20px -3px rgba(0, 0,0 ,.7);
+            // background: //linear-gradient(145deg, rgba(0, 0, 0, 0.66) -25%, rgba(255, 255, 255, 0.248) 80%),
+            // linear-gradient(-35deg, rgba(255, 255, 0, 0.219) 30%, transparent 30%),
+            // linear-gradient(-35deg, rgba(255, 255, 0, 0.432) 30%, transparent 30%),
+            // linear-gradient(-105deg, rgba(117, 70, 148, 0.418) 30%, rgba(255, 255, 255, 0.145) 30%),
+            // linear-gradient(-5deg, rgba(41, 148, 94, 0.384) 60%, transparent 30%),
+            // linear-gradient(-5deg, rgba(206, 53, 60, 0.84) 25%, rgba(255, 255, 255, 0.116) 80%),
+            // repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 3%, rgba(255, 255, 255, 0.7) 6%),
+            // repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 3%, rgba(0, 0, 0, 0.75) 6%),
+            // rgba(59, 40, 40, 0.397);
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid rgb(189, 178, 178);
+            // margin-bottom: 15rem;
+            &::before {
+                position: absolute;
+                top:50%;
+                content:'';
+                width: 110%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                height: 110%;
+                border-radius: 10%;
+                // border: 20px solid black;
+                box-shadow:inset 0 0px 80px 8px rgba($color-black, 0.9);
+                // box-sizing: border-box;
+            }
+        }
+    
+        &--contact-me {
+    
+            // height:5900px;
+            // background:black;
+            width:55%;
+            // margin: 0 auto;
+            margin-bottom: 0;
+            padding-bottom: 25rem;
+    
+            .form-container {
+                
+                padding: 4rem;
+                border-radius: 5px;
+                box-shadow: 0 15px 15px 5px rgba($color-black, .2);
+                background:rgba(rgb(255, 184, 137), .51);//rgba(184, 155, 117, .65);//#8f51c9
+
+                
+                
+            }
+    
+        }
+
+    }
+
+
+}
+
+

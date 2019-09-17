@@ -3,16 +3,17 @@
     width: 100%;
     // background-color: 
     background:
-     linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .5) 3%, transparent 35%, transparent 50%, rgba(0, 0, 0, .55) 70%,  rgba(0, 0, 0, .75) 80%, rgba(0, 0, 0, .85) 99%),
+     linear-gradient(180deg, rgba(0, 0, 0, .85) 2%, rgba(0, 0, 0, .7) 15%, rgba($color-black, .6) 35%, rgba($color-black, .5) 50%,   rgba(0, 0, 0, .75) 75%, rgba(0, 0, 0, .95)),
     // linear-gradient(10deg, rgba(31, 148, 99, 0.438), rgba(0, 0, 255, 0.377)),
     repeating-linear-gradient(45deg, rgba(0, 0, 0, .1) .4%, rgba(255, 255, 255, 0.1) .8%),
     repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) .4%, rgba(255, 255, 255, 0.1) .8%),
     // repeating-linear-gradient( rgba(255, 255, 255, 0.2) 0.5%, rgba(255, 255, 255, 0.1) 1%),
      linear-gradient(-10deg, rgb(75, 10, 26) 50%, rgb(73, 4, 4) 60%), 
                ;
-    border-top: 1px solid rgb(39, 34, 34);
+    // border-top: 1px solid rgb(39, 34, 34);
     position: absolute;
     bottom:0;
     box-shadow: 0 1px 8px 2px black;
+    // margin-top:15rem;
 }
 

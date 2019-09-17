@@ -8,8 +8,47 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    height: 150vh;   
+body { 
     position: relative;
+
+
+
+
+    // background-image: //linear-gradient(3deg, rgba(0, 0, 0, 0.667) 2%, rgba(0, 0, 0, 0.437) 6%,  rgba(0, 0, 0, 0.171) 16%, transparent 25%),
+    // // linear-gradient(110deg, rgba(0, 0, 0, .8) 2%, rgba(206, 235, 43, 0.1) 30%, transparent 40%, transparent),
+    // // linear-gradient(17deg, rgba(0, 0, 0, .58) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
+    // radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, .55) 4%, rgba($color-white, .5) 5%, rgba($color-white, .05) 9.5%, rgba($color-white, .15) 10%, rgba($color-white, 0) 11%, transparent),
+    // radial-gradient(circle at 0 0, rgba($color-black, .95), rgba($color-black, .6) 15%, rgba($color-black, .2) 35%, rgba($color-black, .1) 39%, rgba($color-black, 0) 42%, rgba($color-white, .1) 44%, rgba($color-white, .45) 46.5%, rgba($color-white, .75) 48%, rgba($color-white, .99) 48%, rgba($color-white, .65) 50%, rgba($color-white, .45) 65%, transparent 85%),
+    
+    // // radial-gradient(ellipse at 79% 54%,  rgba($color-white, .85) 0.3%, rgba($color-white, .7) 5%, rgba($color-white, .56) 11%, 
+    // // rgba($color-white, .5) 14%, rgba($color-white, .38) 18%, rgba($color-white, .25) 26%, rgba($color-white, .15) 34%, rgba($color-white, .1) 40%, transparent 50%),
+    
+    // radial-gradient(circle at 0 0, rgb(80, 8, 85) 28%, rgb(255, 127, 104) 48%, transparent 48%),
+    // repeating-linear-gradient(120deg,  rgba(199, 106, 106, 0.1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
+    // repeating-linear-gradient(30deg,  rgba(0, 0, 0, .1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
+    
+    // // repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(255,255,255, .11) 0.8% )3
+    // // repeating-linear-gradient(30deg,  rgba(255, 255, 255, .1), rgba(0, 0, 0, .2) 0.8% ),
+
+    // // linear-gradient(-170deg, rgba(27, 255, 122, .7) 6%, rgba(4, 245, 105, 0.356) 25%, transparent 40%),
+    // linear-gradient(-50deg, rgb(3, 92, 33) 5%, transparent 40%),
+    // linear-gradient(0deg, #4394fd , #9100ca);
+    
+    // background-size: cover;
+    // background-position: top left;
+
+
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:link,
+a:active, 
+a:visited,
+a:focus {
+    text-decoration: none;
 }
 

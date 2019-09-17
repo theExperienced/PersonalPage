@@ -12,10 +12,15 @@
 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/grid";
+@import "layout/main-section";
 // @import "layout/grid";
 
 
-// @import "pages/home";
+@import "components/contact-me-form";
+@import "components/bg-image";
+
+@import "pages/home";
 
 
 

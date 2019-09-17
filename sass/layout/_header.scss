@@ -40,18 +40,18 @@
     //                ;  
 //  linear-gradient(to bottom,  50%,  #6e99ff 50%, #6e99ff)
     // background-position-x: 100p;
-    background-origin: top left;
+    
     // background-attachment: fixed
     background-image: //linear-gradient(3deg, rgba(0, 0, 0, 0.667) 2%, rgba(0, 0, 0, 0.437) 6%,  rgba(0, 0, 0, 0.171) 16%, transparent 25%),
     // linear-gradient(110deg, rgba(0, 0, 0, .8) 2%, rgba(206, 235, 43, 0.1) 30%, transparent 40%, transparent),
     // linear-gradient(17deg, rgba(0, 0, 0, .58) 2%, rgba(0, 0, 0, .1) 30%, transparent 40%, transparent),
     radial-gradient(circle at 46% 70%, white 1.5%, rgba(255, 255, 255, .55) 4%, rgba($color-white, .5) 5%, rgba($color-white, .05) 9.5%, rgba($color-white, .15) 10%, rgba($color-white, 0) 11%, transparent),
-    radial-gradient(circle at 0 0, rgba($color-black, .95), rgba($color-black, .6) 15%, rgba($color-black, .2) 35%, rgba($color-black, .1) 39%, rgba($color-black, 0) 42%, rgba($color-white, .1) 44%, rgba($color-white, .45) 46.5%, rgba($color-white, .75) 48%, rgba($color-white, .99) 48%, rgba($color-white, .7) 50%, rgba($color-white, .4) 55%, transparent 75%),
+    radial-gradient(circle at 0 0, rgba($color-black, .95), rgba($color-black, .8) 15%, rgba($color-black, .2) 35%, rgba($color-black, .1) 37%, rgba($color-white, .25) 42%, rgba($color-white, .45) 44%, rgba($color-white, .9) 47%, rgba($color-white, .95) 48%, rgba($color-white, .99) 48%, rgba($color-white, .65) 50%, rgba($color-white, .45) 65%, transparent 85%),
     
     // radial-gradient(ellipse at 79% 54%,  rgba($color-white, .85) 0.3%, rgba($color-white, .7) 5%, rgba($color-white, .56) 11%, 
     // rgba($color-white, .5) 14%, rgba($color-white, .38) 18%, rgba($color-white, .25) 26%, rgba($color-white, .15) 34%, rgba($color-white, .1) 40%, transparent 50%),
     
-    radial-gradient(circle at 0 0, rgb(80, 8, 85) 28%, rgb(255, 127, 104) 48%, transparent 48%),
+    radial-gradient(circle at 0 0, rgb(78, 4, 83) 26%, rgb(238, 29, 29) 48%, transparent 48%),
     repeating-linear-gradient(120deg,  rgba(199, 106, 106, 0.1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
     repeating-linear-gradient(30deg,  rgba(0, 0, 0, .1), rgba(255,255,255, .13) 0.2%, transparent 0.3%, transparent 0.6%, rgba(255,255,255, .11) 0.75%, rgba(0, 0, 0, .1) 0.8%),
     
@@ -59,8 +59,13 @@
     // repeating-linear-gradient(30deg,  rgba(255, 255, 255, .1), rgba(0, 0, 0, .2) 0.8% ),
 
     // linear-gradient(-170deg, rgba(27, 255, 122, .7) 6%, rgba(4, 245, 105, 0.356) 25%, transparent 40%),
-    linear-gradient(-50deg, rgb(3, 92, 33) 5%, transparent 40%),
+    linear-gradient(-30deg, rgba(70, 187, 129, .8) 5%, transparent 45%),
     linear-gradient(0deg, #4394fd , #9100ca);
+
+    // background-attachment: fixed;
+    // background-size: contain;
+    // background-position: top left;
+
     
     
     
@@ -123,19 +128,23 @@
     //                 ),
     // linear-gradient(157deg, rgb(61, 233, 176), rgb(216, 46, 193));
 
-    box-shadow: 0 2px 14px 2px rgba($color-black, .45);
+    box-shadow: inset 0 -5px 15px -2px rgba($color-black, .65);
     background-size: cover;
-
     &__bottom-layer {
 
         content:'';
-        position: absolute;
+        // position: absolute;
         width:100%;
-        height:10%;
-        border-top: 1px solid rgb(255, 255, 255);
-        background:linear-gradient(to bottom,rgb(199, 199, 199) 1%, rgb(165, 165, 165) 4%, rgb(37, 21, 21) 8%,
-        rgb(27, 21, 37)91%, rgb(165, 165, 165) 95%, rgb(199, 199, 199) 99%);
-        bottom: 0;
+        // height:6rem;
+        margin-bottom: 10rem;
+    
+        // border-top: 1px solid rgb(255, 255, 255);
+        background-color:silver;
+        background-image: linear-gradient(to-bottom, rgb(201, 27, 27), transparent)
+         
+        ;
+        //linear-gradient(to bottom,rgb(199, 199, 199) 1%, rgb(165, 165, 165) 4%, rgb(37, 21, 21) 8%, rgb(27, 21, 37)91%, rgb(165, 165, 165) 95%, rgb(199, 199, 199) 99%);
+        // bottom: 0;
     }
 
     .header__heading-container {

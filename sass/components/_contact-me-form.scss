@@ -1,0 +1,89 @@
+.contact-me-form {
+
+    position: relative;
+
+    // width: 65%;
+    // background:red;
+    margin: 0 auto;
+
+    &__section {
+
+        position: relative;
+        border:none;
+
+        // background:red;
+        // height:10rem;
+
+        &--textarea {
+        }
+    }
+
+    &__field {
+
+        // background:red;
+        // width: 95%;
+        // margin:
+        border-radius: 3px;
+        z-index: 1;
+        background: $color-white;
+        padding: 0 0.9rem;
+        width: 100%;
+        border: 0;
+        outline:none;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        transition: all .11s ease-in;
+        border: 1px solid rgba(255, 184, 137, 0.85);
+        box-shadow:inset 0 0 0 0px rgba(rgb(184, 155, 117), 0.95),  0 0 5px 1px rgba($color-black, .175);
+
+        &:focus,
+        &:active {
+            background:black;
+            color: rgb(126, 243, 179);
+            border: 1px solid white;
+            box-shadow: inset 0 0 2px 2px rgba($color-white, .65), inset 0 0 6px 2px rgba($color-white, .75), 0 0 15px 3px rgba(#b64f2f, .7);
+        }
+
+        &--name, &--mail {
+            height: 5rem;
+            
+        }
+
+        &--textarea {
+
+            font-size: 2rem;
+            padding: 0.9rem;
+            resize: vertical;
+            overflow: auto;
+            height:15rem;
+            // background:red;
+        }
+
+    }
+
+    &__label {
+
+        color: black;
+        
+        font-family: 'Montserrat';
+        position: absolute;
+        font-size: 2rem;
+        font-weight: 100;
+        left: 0.7rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index:0;
+        transform-origin: top;
+        transition: all .2s linear;
+
+        &.faded-out {
+            transform: scale(.1);
+            opacity: 0;
+        }   
+
+        &.faded {
+            display: none;
+
+        }
+    }
+}

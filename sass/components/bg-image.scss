@@ -1,0 +1,52 @@
+.bg-image {
+    width: 100%;
+    height: 10vh;
+
+    background-attachment: fixed;
+    
+    &--blurred {
+        // filter: blur(5px);
+            filter: blur(4px);
+         background:linear-gradient(10deg, rgba($color-black, .1) 30%, transparent 30% ),
+         linear-gradient(20deg, rgba($color-white, .1) 10%, transparent 10% ),
+         linear-gradient(8deg, rgba($color-black, .1) 40%, transparent 40% ),
+         linear-gradient(28deg, rgba($color-black, .1) 40%, transparent 40% ),
+         linear-gradient(38deg, rgba(red, .1) 40%, transparent 40% ),
+         linear-gradient(138deg, rgba($color-black, .1) 40%, transparent 40% ),
+         linear-gradient(8deg, rgba($color-black, .1) 60%, transparent 60% ),
+         linear-gradient(-52deg, rgba($color-black, .1) 60%, transparent 60% ),
+         linear-gradient(40deg, rgba($color-white, .1) 80%, transparent 80% ),
+         linear-gradient(-40deg, rgba($color-black, .1) 80%, transparent 80% ),
+         linear-gradient(70deg, rgba($color-white, .1) 70%, transparent 70% ),
+         linear-gradient(80deg, rgba($color-white, .1) 70%, transparent 70% ),
+         linear-gradient(90deg, rgba($color-white, .1) 70%, transparent 70% ),
+         linear-gradient(110deg, rgba($color-white, .1) 70%, transparent 70% ),
+         linear-gradient(70deg, rgba($color-white, .1) 60%, transparent 60% ),
+         linear-gradient(50deg, rgba($color-white, .1) 50%, transparent 50% ),
+         conic-gradient(at 45% 45%, #1e55d9 10%,#540bba 25%, #ba0b42 70%, #1e55d9)
+       ;
+//             linear-gradient(-50deg, rgba($color-black, .8), rgba($color-black, .4)),
+//             repeating-linear-gradient(135deg, rgba($color-white, .05) , transparent 10%,
+//             rgba($color-white, .1) 10%, transparent 20%,
+//             rgba($color-white, .15) 20%, transparent 30%,
+//             rgba($color-white, .2) 30%, transparent 40%,
+//             rgba($color-white, .25) 40%, transparent 50%,
+//             rgba($color-white, .3) 50%, transparent 60%,
+//             rgba($color-white, .35) 60%, transparent 70%,
+//             rgba($color-white, .3) 70%, transparent 80%,
+//             rgba($color-white, .25) 80%, transparent 90%,
+//               rgba($color-white, .15) 90%, transparent),
+//             repeating-linear-gradient(-135deg, rgba($color-black, .05) , transparent 10%,
+//             rgba($color-black, .1) 10%, transparent 20%,
+//             rgba($color-black, .15) 20%, transparent 30%,
+//             rgba($color-black, .2) 30%, transparent 40%,
+//             rgba($color-black, .25) 40%, transparent 50%,
+//             rgba($color-black, .3) 50%, transparent 60%,
+//             rgba($color-black, .35) 60%, transparent 70%,
+//             rgba($color-black, .4) 70%, transparent 80%,
+//             rgba($color-black, .45) 80%, transparent 90%,
+//               rgba($color-black, .5) 90%, transparent),
+//             conic-gradient(at 35% 40%, #1e55d9 10%, #540bba 40%, #ba0b42 70%, #1e55d9)
+//   ;
+    }
+}
