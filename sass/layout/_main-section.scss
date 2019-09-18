@@ -96,11 +96,23 @@
     
             .form-container {
                 
+                position: relative;
                 padding: 4rem;
+                // z-index: 110;
                 border-radius: 5px;
-                box-shadow: 0 15px 15px 5px rgba($color-black, .2);
-                background:rgba(rgb(255, 184, 137), .51);//rgba(184, 155, 117, .65);//#8f51c9
+                // box-shadow: 0 15px 15px 5px rgba($color-black, .2);
+                background:rgba(rgb(255, 184, 137), .35);//rgba(184, 155, 117, .65);//#8f51c9
 
+                &:before {
+                    content:'';
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    transform: rotateZ(-20deg);
+                    width:30%;
+                    box-shadow: 0 0 5px 2px rgba($color-black, .2);
+                    z-index: -1;
+                }
                 
                 
             }

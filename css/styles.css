@@ -250,10 +250,19 @@ a:focus {
       margin-bottom: 0;
       padding-bottom: 25rem; }
       .main__section--contact-me .form-container {
+        position: relative;
         padding: 4rem;
         border-radius: 5px;
-        box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.2);
-        background: rgba(255, 184, 137, 0.51); }
+        background: rgba(255, 184, 137, 0.35); }
+        .main__section--contact-me .form-container:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: rotateZ(-20deg);
+          width: 30%;
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+          z-index: -1; }
 
 .contact-me-form {
   position: relative;
@@ -262,8 +271,7 @@ a:focus {
     position: relative;
     border: none; }
   .contact-me-form__field {
-    border-radius: 3px;
-    z-index: 1;
+    border-radius: 0px 0px 6px 6px;
     background: white;
     padding: 0 0.9rem;
     width: 100%;
@@ -272,8 +280,7 @@ a:focus {
     font-size: 2rem;
     line-height: 2.5rem;
     transition: all .11s ease-in;
-    border: 1px solid rgba(255, 184, 137, 0.85);
-    box-shadow: inset 0 0 0 0px rgba(184, 155, 117, 0.95), 0 0 5px 1px rgba(0, 0, 0, 0.175); }
+    border-bottom: 2px solid rgba(255, 184, 137, 0.85); }
     .contact-me-form__field:focus, .contact-me-form__field:active {
       background: black;
       color: #7ef3b3;
@@ -306,7 +313,7 @@ a:focus {
       display: none; }
   .contact-me-form__submit {
     position: absolute;
-    right: -20%;
+    right: -2%;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
