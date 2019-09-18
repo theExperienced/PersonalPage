@@ -56,6 +56,7 @@
             resize: vertical;
             overflow: auto;
             height:15rem;
+            // wrap --- how the text is wrapped when submitted !! consider using!!!
             // background:red;
         }
 
@@ -83,6 +84,37 @@
 
         &.faded {
             display: none;
+
+        }
+    }
+
+    &__submit {
+
+        position: absolute; 
+        right:-20%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width:7rem;
+        height: 7rem;
+        border-radius: 4rem;
+        background-color:red;
+        border:none;
+        background-image: conic-gradient(rgba($color-black, .6), transparent),
+        conic-gradient(from 180deg, rgba($color-white, .6), transparent);
+
+        &::after {
+
+            content:'ssss';
+            position: absolute; 
+            width:6rem;
+            height:6rem;
+            // border-radius: 4rem;
+            background:green;
+            right:-20%;
+            top: 50%;
+            // transform: translateY(50%);
+
 
         }
     }
