@@ -29,13 +29,14 @@
                     </div>
                     <div class="about__list about__list--about">
                         <ul> 
-                            <li><span></span>Artist by nature</li>
-                            <li><span></span>A fledging front-end developer</li>
-                            <li><span></span>All the while dabbling in   COMPLETE!!!</li>
-                            <li><span></span>On the lookout for cutting edge, cool CSS features (Nevermind Chrome is the sole supporting browser)</li>
-                            <li><span></span>Harnessing the powers of mindfulness meditation to get inspired </li>
+                            <li>Artist by nature</li>
+                            <li>A fledging front-end developer</li>
+                            <li>All the while dabbling in other languages and technologies</li> 
+                            <li>Harnessing the powers of mindfulness meditation to get inspired </li>
+                            <li>On the lookout for cutting edge, cool CSS features (Nevermind Chrome is the sole supporting browser)</li>
                            
-                            <li><span></span>An avid believer in the immemorial <blockquote><i><sup>&#10077;</sup> Sharing is Caring <sub>&#10078;</sub></i></blockquote></li>
+                           
+                            <li>An avid believer in the timeless <blockquote><i><sup>&#10077;</sup> Sharing is Caring <sub>&#10078;</sub></i></blockquote></li>
                         </ul>
                     </div>       
                          <!-- maybe this one and aspirations is same kind of list  - - - -> change CSS -->
@@ -48,20 +49,24 @@
                     </div>
                     <div class="about__list about__list--aspirations">
                         <ul>
-                            <li><span></span>Getting to <a class="francine-link" href="http://diana-adrianne.com/purecss-francine/">this</a> level of CSS mastery</li>
-                            <li><span></span>Further fine tuning my designer senses</li>
-                                 
-                
-                            <li><span></span></li>
-                            <li><span></span>Taming my Ego</li> <!-- /*put EGO in a span and do something special*/ -->
-                            <li><span></span>Learning to fly (in Rocket League)</li>
+                            <li>Getting to <a class="francine-link" href="http://diana-adrianne.com/purecss-francine/">this</a> level of CSS mastery</li>
+                            <li>Further fine tuning my designer senses</li>
+                            <li>Taming my Ego</li> <!-- /*put EGO in a span and do something special*/ -->
+                            <li>Something</li>
+                            <li>Learning to fly (in Rocket League)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section class="main__section main__section--works">
-            <!-- <div class="bg-image bg-image--blurred"></div> -->
+            <div class="works-container">
+                <div class="h2-container">
+                    <h2 class="h2">
+                        projects
+                    </h2>
+                </div>
+            </div>
         </section>
         <section class="main__section main__section--contact-me">
             <div class="h2-container">
@@ -73,17 +78,17 @@
                 <form action="https://formspree.io/mizradan@gmail.com" method="POST">
                     <div class="row row--contact-me-form">
                         <fieldset class="contact-me-form__section row__col-1-of-2 row__col-1-of-2--contact-me-form">
-                            <label for="" class="contact-me-form__label">Name</label>
-                            <input class="contact-me-form__field contact-me-form__field--mail" type="text" id="name" name="name">
+                            <!-- <label for="" class="contact-me-form__label">Name</label> -->
+                            <input class="contact-me-form__field contact-me-form__field--mail" type="text" id="name" name="name" placeholder="Name" autocomplete="off">
                         </fieldset>
                         <fieldset class="contact-me-form__section row__col-1-of-2 row__col-1-of-2--contact-me-form">
-                            <label for="" class="contact-me-form__label">Email</label>
-                            <input class="contact-me-form__field contact-me-form__field--name" type="mail" id="email" name="email">
+                            <!-- <label for="" class="contact-me-form__label">Email</label> -->
+                            <input class="contact-me-form__field contact-me-form__field--name" type="mail" id="email" name="email" placeholder="Email" autocomplete="off">
                         </fieldset>
                     </div>
                     <fieldset class="contact-me-form__section contact-me-form__section--textarea">
-                       <label for="" class="contact-me-form__label">Your message</label>
-                       <textarea class="contact-me-form__field contact-me-form__field--textarea" id="message" name="message"></textarea>
+                       <!-- <label for="" class="contact-me-form__label">Your message</label> -->
+                       <textarea class="contact-me-form__field contact-me-form__field--textarea" id="message" name="message" placeholder="Your kind words"></textarea>
                     </fieldset>
                     <input class="contact-me-form__submit" type="submit" name="submit">
                 </form>
@@ -104,11 +109,12 @@
             console.log("loaded");
 
             document.querySelectorAll('.contact-me-form__field').forEach((field) => {
-                field.addEventListener('transitionend', () => {
-                    field.classList.add('faded');
-                });
+                // field.addEventListener('transitionend', () => {
+                //     field.classList.add('faded');
+                // });
                 field.addEventListener('focus', ()=> {
-                    field.previousElementSibling.classList.add('faded-out');
+                    // field.previousElementSibling.classList.add('faded-out');
+                    field.setAttribute('placeholder', ' ');
                 });
                 // console.log(field);
            

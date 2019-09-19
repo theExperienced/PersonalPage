@@ -10,18 +10,24 @@
     &__section {
 
         margin: 0 auto;
-        margin-bottom: 15rem;
 
         &--about {
-
-            width: 85%;
+            // background-color:;
+            background:  
+             url(https://s.cdpn.io/79/glow.png) no-repeat fixed center top, 
+            url("https://s.cdpn.io/79/light-noise.gif") repeat fixed 0 0
+            ;
+            padding: 10rem 7.5%;
 
         }
     
         &--works {
 
-
             
+
+            border-width: 1px 0;
+            border-color: rgba($color-black, .35);
+            border-style: solid;
             
             
             
@@ -54,8 +60,6 @@
             // linear-gradient(red, purple);
             background-attachment: fixed;
 
-    
-            height:400px;
             // box-shadow:inset 0 5px 20px -3px rgba(0, 0,0 ,.7);
             // background: //linear-gradient(145deg, rgba(0, 0, 0, 0.66) -25%, rgba(255, 255, 255, 0.248) 80%),
             // linear-gradient(-35deg, rgba(255, 255, 0, 0.219) 30%, transparent 30%),
@@ -68,7 +72,6 @@
             // rgba(59, 40, 40, 0.397);
             position: relative;
             overflow: hidden;
-            border-top: 1px solid rgb(189, 178, 178);
             // margin-bottom: 15rem;
             &::before {
                 position: absolute;
@@ -83,36 +86,57 @@
                 box-shadow:inset 0 0px 50px 15px rgba($color-black, 0.9);
                 // box-sizing: border-box;
             }
+
+            .works-container {
+                width: 75%;
+                height: 40rem;
+                background: rgba($color-white, .7);
+                margin: 13rem auto;  
+                padding: 5rem;  
+            }
         }
     
         &--contact-me {
     
             // height:5900px;
             // background:black;
-            width:55%;
             // margin: 0 auto;
+            // background: rgb(255, 246, 227);
+            
             margin-bottom: 0;
-            padding-bottom: 25rem;
+            padding: 10rem 0 20rem 0;
     
             .form-container {
                 
                 position: relative;
-                padding: 4rem;
+                padding: 3.5rem 2.5rem;
+                width:55%;
+                margin: 0 auto;
                 // z-index: 110;
                 border-radius: 5px;
-                // box-shadow: 0 15px 15px 5px rgba($color-black, .2);
-                background:rgba(rgb(255, 184, 137), .35);//rgba(184, 155, 117, .65);//#8f51c9
+                // box-shadow: 0 13px 8px -2px rgba($color-black, .55);
+                box-shadow: 5px 4px 3px -1px rgba($color-black, .25);
+                background: rgba(rgb(255, 210, 186), 1);//rgba(184, 155, 117, .65);//#8f51c9
 
-                &:before {
-                    content:'';
-                    position: absolute;
-                    bottom:0;
-                    left:0;
-                    transform: rotateZ(-20deg);
-                    width:30%;
-                    box-shadow: 0 0 5px 2px rgba($color-black, .2);
-                    z-index: -1;
-                }
+                // &::before, &::after {
+
+                //     content:'';
+                //     position: absolute;
+                //     bottom: 0;
+                //     width:30%;
+                //     box-shadow: 0 0 20px 7px rgba($color-black, .65);
+                //     z-index: -1;
+                // }
+            
+                // &::before {
+                //     left: 2.5%;
+                //     transform: rotateZ(-3deg);
+                // }
+                
+                // &::after {
+                //     right: 2.5%;
+                //     transform: rotateZ(3deg);
+                // }
                 
                 
             }

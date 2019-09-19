@@ -8,7 +8,6 @@
 
     &__section {
 
-        position: relative;
         border:none;
 
         // background:red;
@@ -20,28 +19,34 @@
 
     &__field {
 
+        position: relative;
         // background:red;
         // width: 95%;
         // margin:
-        border-radius: 0px 0px 6px 6px;
+        border-radius: 0px 0px 4px 4px;
         // z-index: 1;
         background: $color-white;
         padding: 0 0.9rem;
         width: 100%;
+        font-weight: 100;
         border: 0;
         outline:none;
         font-size: 2rem;
         line-height: 2.5rem;
         transition: all .11s ease-in;
-        border-bottom: 2px solid rgba(255, 184, 137, 0.85);
+        border-bottom: 1px solid rgba(206, 149, 111, 1);
         // box-shadow:inset 0 0 0 0px rgba(rgb(184, 155, 117), 0.95),  0 0 5px 1px rgba($color-black, .175);
 
         &:focus,
         &:active {
-            background:black;
-            color: rgb(126, 243, 179);
-            border: 1px solid white;
-            box-shadow: inset 0 0 2px 2px rgba($color-white, .65), inset 0 0 6px 2px rgba($color-white, .75), 0 0 15px 3px rgba(#b64f2f, .7);
+
+            
+            border-bottom: 2px solid rgb(204, 15, 15);
+            box-shadow: inset 8px 0 6px -8px rgba($color-black, .45), inset -8px 0 7px -8px rgba($color-black, .45);
+            // background:black;
+            // color: rgb(126, 243, 179);
+            // border: 1px solid white;
+            // box-shadow: inset 0 0 2px 2px rgba($color-white, .65), inset 0 0 6px 2px rgba($color-white, .75), 0 0 15px 3px rgba(#b64f2f, .7);
         }
 
         &--name, &--mail {
@@ -51,7 +56,7 @@
 
         &--textarea {
 
-            font-size: 2rem;
+            // font-size: 3rem;
             padding: 0.9rem;
             resize: vertical;
             overflow: auto;
@@ -60,38 +65,61 @@
             // background:red;
         }
 
+        &::placeholder {
+            
+            color: black;
+            display:block;
+            
+            font-family: 'Montserrat';
+            position: absolute;
+            // font-size: 2rem;
+            font-weight: 100;
+            left: 0.7rem;
+            top: 50%;
+            transform: translateY(-50%);
+            // z-index:-1;
+            transform-origin: left;
+            transition: all .15s linear;
+        }
+
+        &:focus::placeholder {
+            
+            transform: scale(.1);
+            opacity: 0;
+        }
+
     }
 
     &__label {
 
-        color: black;
+        // color: black;
         
-        font-family: 'Montserrat';
-        position: absolute;
-        font-size: 2rem;
-        font-weight: 100;
-        left: 0.7rem;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index:0;
-        transform-origin: top;
-        transition: all .2s linear;
+        // font-family: 'Montserrat';
+        // position: absolute;
+        // font-size: 2rem;
+        // font-weight: 100;
+        // left: 0.7rem;
+        // top: 50%;
+        // transform: translateY(-50%);
+        // z-index:-1;
+        // transform-origin: top;
+        // transition: all .2s linear;
 
-        &.faded-out {
-            transform: scale(.1);
-            opacity: 0;
-        }   
+        // &.faded-out {
+        //     transform: scale(.1);
+        //     opacity: 0;
+        // }   
 
-        &.faded {
-            display: none;
+        // &.faded {
+        //     display: none;
 
-        }
+        // }
     }
 
     &__submit {
 
         position: absolute; 
-        right:-2%;
+        right:-20%;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;

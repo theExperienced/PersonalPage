@@ -1,19 +1,33 @@
 .footer {
-    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
     width: 100%;
     // background-color: 
-    background:
-     linear-gradient(180deg, rgba(0, 0, 0, .85) 2%, rgba(0, 0, 0, .7) 15%, rgba($color-black, .6) 35%, rgba($color-black, .5) 50%,   rgba(0, 0, 0, .75) 75%, rgba(0, 0, 0, .95)),
-    // linear-gradient(10deg, rgba(31, 148, 99, 0.438), rgba(0, 0, 255, 0.377)),
-    repeating-linear-gradient(45deg, rgba(0, 0, 0, .1) .4%, rgba(255, 255, 255, 0.1) .8%),
-    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) .4%, rgba(255, 255, 255, 0.1) .8%),
-    // repeating-linear-gradient( rgba(255, 255, 255, 0.2) 0.5%, rgba(255, 255, 255, 0.1) 1%),
-     linear-gradient(-10deg, rgb(75, 10, 26) 50%, rgb(73, 4, 4) 60%), 
-               ;
-    // border-top: 1px solid rgb(39, 34, 34);
+    background-color: rgb(201, 201, 201);
+    background-image:
+    //  linear-gradient(180deg, rgba(0, 0, 0, .85) 2%, rgba(0, 0, 0, .7) 15%, rgba($color-black, .6) 35%, rgba($color-black, .5) 50%,   rgba(0, 0, 0, .75) 75%, rgba(0, 0, 0, .95)),
+    // // linear-gradient(10deg, rgba(31, 148, 99, 0.438), rgba(0, 0, 255, 0.377)),
+    // repeating-linear-gradient(45deg, rgba(0, 0, 0, .1) .4%, rgba(255, 255, 255, 0.1) .8%),
+    // repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) .4%, rgba(255, 255, 255, 0.1) .8%),
+    // // repeating-linear-gradient( rgba(255, 255, 255, 0.2) 0.5%, rgba(255, 255, 255, 0.1) 1%),
+    //  linear-gradient(-10deg, rgb(75, 10, 26) 50%, rgb(73, 4, 4) 60%), 
+
+    linear-gradient(to bottom, rgba($color-white, .8) 2.5%, rgba($color-white, .55) 2.5%, rgba($color-white, .5) 10%,  rgba($color-white, .65) 50%, transparent 60%),
+
+    repeating-linear-gradient(to left, rgba($color-black, .05) .2%, transparent  .4%)
+    // repeating-linear-gradient(to right, rgba($color-black, .6) 0.5%, transparent 0.5%, transparent 1%),
+    // repeating-linear-gradient(to right, rgba($color-black, .6) 0.3%, transparent 0.3%, transparent 0.8%);
+    ;    
+
+
+
+
+    border-top: 1px solid rgba(rgb(201, 191, 187), .1);
     position: absolute;
     bottom:0;
-    box-shadow: 0 1px 8px 2px black;
+    // box-shadow: 0 1.5rem 2.5rem 2px rgba($color-black, 1);
     // margin-top:15rem;
 }
 

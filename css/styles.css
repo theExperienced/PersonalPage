@@ -29,7 +29,7 @@ a:focus {
     display: inline-flex;
     padding: 0.5rem 2.2rem;
     letter-spacing: 5px;
-    text-shadow: 0 0 0 #c7aa75, -1px -1px 1px #996403, -2px -1px 0px rgba(255, 255, 255, 0.8), -3px -1px 8px rgba(255, 255, 255, 0.6), -4px -3px 11px rgba(255, 255, 255, 0.500445), 2px 0px 0px rgba(0, 0, 0, 0.79487), 6px -2px 9px rgba(0, 0, 0, 0.45), 9px -2px 8px rgba(0, 0, 0, 0.35), 11px -3px 4px rgba(0, 0, 0, 0.25), 18px -3px 3px rgba(0, 0, 0, 0.2), 21px -4px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 0 #dab36c, -1px 0px 1px #573902, -2px -1px 0px rgba(255, 255, 255, 0.8), -3px -1px 8px rgba(255, 255, 255, 0.6), -4px -3px 11px rgba(255, 255, 255, 0.500445), 2px 0 0px rgba(0, 0, 0, 0.85), 3px 0 0px rgba(0, 0, 0, 0.85), 4px -1px 1px rgba(0, 0, 0, 0.85), 5px -1px 2px rgba(0, 0, 0, 0.85), 5px -1px 3px rgba(0, 0, 0, 0.85), 7px -2px 3px rgba(0, 0, 0, 0.85), 9px -2px 5px rgba(0, 0, 0, 0.7), 9px -2px 7px rgba(0, 0, 0, 0.4), 10px -3px 7px rgba(0, 0, 0, 0.35), 12px -4px 10px rgba(0, 0, 0, 0.65), 13px -5px 12px rgba(0, 0, 0, 0.5), 14px -4px 12px rgba(0, 0, 0, 0.65);
     background: black;
     color: transparent;
     -webkit-background-clip: text;
@@ -87,16 +87,18 @@ a:focus {
 
 .copyrights-container__copyrights {
   text-transform: capitalize;
-  font-weight: 100;
+  font-weight: 00;
   min-width: 45%;
   text-align: center;
-  line-height: 9rem;
   margin: 0 auto;
   font-size: 1.9rem;
   letter-spacing: 0.9rem;
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #bebcaa;
-  text-shadow: -1px -1px 0px black, 1px 1px 2px #50440e; }
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: rgba(82, 96, 117, 0.9);
+  text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px; }
 
 .h2-container {
   text-align: center;
@@ -127,7 +129,7 @@ a:focus {
   .about__list ul li {
     position: relative;
     margin-bottom: 1rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     padding-left: 6rem;
     color: #553012;
     font-size: 1.8rem; }
@@ -159,7 +161,6 @@ a:focus {
   .header__bottom-layer {
     content: '';
     width: 100%;
-    margin-bottom: 10rem;
     background-color: silver;
     background-image: linear-gradient(to-bottom, #c91b1b, transparent); }
   .header .header__heading-container {
@@ -189,12 +190,16 @@ a:focus {
       transform: rotateZ(0deg); }
 
 .footer {
-  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 2%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.95)), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0.4%, rgba(255, 255, 255, 0.1) 0.8%), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0.4%, rgba(255, 255, 255, 0.1) 0.8%), linear-gradient(-10deg, #4b0a1a 50%, #490404 60%);
+  background-color: #c9c9c9;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 2.5%, rgba(255, 255, 255, 0.55) 2.5%, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0.65) 50%, transparent 60%), repeating-linear-gradient(to left, rgba(0, 0, 0, 0.05) 0.2%, transparent 0.4%);
+  border-top: 1px solid rgba(201, 191, 187, 0.1);
   position: absolute;
-  bottom: 0;
-  box-shadow: 0 1px 8px 2px black; }
+  bottom: 0; }
 
 .row {
   margin: 0 auto; }
@@ -205,7 +210,7 @@ a:focus {
   .row [class*="col-"] {
     float: left; }
   .row--contact-me-form {
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
   .row__col-1-of-2--about {
     width: 50%;
     padding: 7rem 0; }
@@ -216,7 +221,7 @@ a:focus {
     .row__col-1-of-2--about:not(:last-child) {
       border-right: 1px solid rgba(0, 0, 0, 0.15); }
   .row__col-1-of-2--contact-me-form {
-    width: 45%;
+    width: 48%;
     position: relative; }
     .row__col-1-of-2--contact-me-form:nth-child(2) {
       float: right; }
@@ -224,17 +229,18 @@ a:focus {
 .main {
   margin: 0 auto; }
   .main__section {
-    margin: 0 auto;
-    margin-bottom: 15rem; }
+    margin: 0 auto; }
     .main__section--about {
-      width: 85%; }
+      background: url(https://s.cdpn.io/79/glow.png) no-repeat fixed center top, url("https://s.cdpn.io/79/light-noise.gif") repeat fixed 0 0;
+      padding: 10rem 7.5%; }
     .main__section--works {
+      border-width: 1px 0;
+      border-color: rgba(0, 0, 0, 0.35);
+      border-style: solid;
       background: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 30%, transparent 30%), linear-gradient(20deg, rgba(255, 255, 255, 0.1) 10%, transparent 10%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(28deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(38deg, rgba(255, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(138deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(-52deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(40deg, rgba(255, 255, 255, 0.1) 80%, transparent 80%), linear-gradient(-40deg, rgba(0, 0, 0, 0.1) 80%, transparent 80%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(80deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(110deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 60%, transparent 60%), linear-gradient(50deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%), conic-gradient(at 45% 45%, #1e55d9 10%, #540bba 25%, #ba0b42 70%, #1e55d9);
       background-attachment: fixed;
-      height: 400px;
       position: relative;
-      overflow: hidden;
-      border-top: 1px solid #bdb2b2; }
+      overflow: hidden; }
       .main__section--works::before {
         position: absolute;
         top: 50%;
@@ -245,75 +251,69 @@ a:focus {
         height: 110%;
         border-radius: 10%;
         box-shadow: inset 0 0px 50px 15px rgba(0, 0, 0, 0.9); }
+      .main__section--works .works-container {
+        width: 75%;
+        height: 40rem;
+        background: rgba(255, 255, 255, 0.7);
+        margin: 13rem auto;
+        padding: 5rem; }
     .main__section--contact-me {
-      width: 55%;
       margin-bottom: 0;
-      padding-bottom: 25rem; }
+      padding: 10rem 0 20rem 0; }
       .main__section--contact-me .form-container {
         position: relative;
-        padding: 4rem;
+        padding: 3.5rem 2.5rem;
+        width: 55%;
+        margin: 0 auto;
         border-radius: 5px;
-        background: rgba(255, 184, 137, 0.35); }
-        .main__section--contact-me .form-container:before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          transform: rotateZ(-20deg);
-          width: 30%;
-          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-          z-index: -1; }
+        box-shadow: 5px 4px 3px -1px rgba(0, 0, 0, 0.25);
+        background: #ffd2ba; }
 
 .contact-me-form {
   position: relative;
   margin: 0 auto; }
   .contact-me-form__section {
-    position: relative;
     border: none; }
   .contact-me-form__field {
-    border-radius: 0px 0px 6px 6px;
+    position: relative;
+    border-radius: 0px 0px 4px 4px;
     background: white;
     padding: 0 0.9rem;
     width: 100%;
+    font-weight: 100;
     border: 0;
     outline: none;
     font-size: 2rem;
     line-height: 2.5rem;
     transition: all .11s ease-in;
-    border-bottom: 2px solid rgba(255, 184, 137, 0.85); }
+    border-bottom: 1px solid #ce956f; }
     .contact-me-form__field:focus, .contact-me-form__field:active {
-      background: black;
-      color: #7ef3b3;
-      border: 1px solid white;
-      box-shadow: inset 0 0 2px 2px rgba(255, 255, 255, 0.65), inset 0 0 6px 2px rgba(255, 255, 255, 0.75), 0 0 15px 3px rgba(182, 79, 47, 0.7); }
+      border-bottom: 2px solid #cc0f0f;
+      box-shadow: inset 8px 0 6px -8px rgba(0, 0, 0, 0.45), inset -8px 0 7px -8px rgba(0, 0, 0, 0.45); }
     .contact-me-form__field--name, .contact-me-form__field--mail {
       height: 5rem; }
     .contact-me-form__field--textarea {
-      font-size: 2rem;
       padding: 0.9rem;
       resize: vertical;
       overflow: auto;
       height: 15rem; }
-  .contact-me-form__label {
-    color: black;
-    font-family: 'Montserrat';
-    position: absolute;
-    font-size: 2rem;
-    font-weight: 100;
-    left: 0.7rem;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 0;
-    transform-origin: top;
-    transition: all .2s linear; }
-    .contact-me-form__label.faded-out {
+    .contact-me-form__field::placeholder {
+      color: black;
+      display: block;
+      font-family: 'Montserrat';
+      position: absolute;
+      font-weight: 100;
+      left: 0.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transform-origin: left;
+      transition: all .15s linear; }
+    .contact-me-form__field:focus::placeholder {
       transform: scale(0.1);
       opacity: 0; }
-    .contact-me-form__label.faded {
-      display: none; }
   .contact-me-form__submit {
     position: absolute;
-    right: -2%;
+    right: -20%;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;

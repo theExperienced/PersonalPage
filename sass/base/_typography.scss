@@ -21,7 +21,9 @@
         // border: 1px solid gold;
         // letter-spacing: 3px;
         // color: rgb(212, 173, 173);
-        text-shadow:  0 0 0 rgb(199, 170, 117), -1px -1px 1px rgb(153, 100, 3),-2px -1px 0px rgba($color-white, .8), -3px -1px 8px rgba($color-white, .6), -4px -3px 11px rgba($color-white, .500445), 2px 0px 0px rgba($color-black, .794869998645), 6px -2px 9px rgba($color-black, .45), 9px -2px 8px rgba($color-black, .35), 11px -3px 4px rgba($color-black, .25), 18px -3px 3px rgba($color-black, .2), 21px -4px 2px rgba($color-black, .1);
+        text-shadow:  0 0 0 rgb(218, 179, 108), -1px 0px 1px rgb(87, 57, 2),-2px -1px 0px rgba($color-white, .8), -3px -1px 8px rgba($color-white, .6), -4px -3px 11px rgba($color-white, .500445), 
+        2px 0 0px rgba($color-black, .85), 3px 0 0px rgba($color-black, .85), 4px -1px 1px rgba($color-black, .85), 5px -1px 2px rgba($color-black, .85), 5px -1px 3px rgba($color-black, .85), 7px -2px 3px rgba($color-black, .85),
+        9px -2px 5px rgba($color-black, .7), 9px -2px 7px rgba($color-black, .4), 10px -3px 7px rgba($color-black, .35), 12px -4px 10px rgba($color-black, .65),  13px -5px 12px rgba($color-black, .5), 14px -4px 12px rgba($color-black, .65);         //, 2px 0px 0px rgba($color-black, .9), 6px -2px 9px rgba($color-black, .75), 9px -2px 8px rgba($color-black, .45), 11px -3px 3px rgba($color-black, .25), 18px -3px 3px rgba($color-black, .2), 21px -4px 2px rgba($color-black, .1);
         background: black; 
         color: transparent;
         -webkit-background-clip: text;
@@ -171,16 +173,24 @@
     &__copyrights {
 
         text-transform: capitalize;
-        font-weight: 100;
+        font-weight: 00;
         min-width: 45%;
         text-align: center;
-        line-height: 9rem;  
+        // line-height: 4rem;  
         margin: 0 auto;
         font-size: 1.9rem;
         letter-spacing: 0.9rem;
         font-family: 'Montserrat Alternates', sans-serif;
-       color:rgb(190, 188, 170);
-        text-shadow: -1px -1px 0px rgb(0, 0, 0), 1px 1px 2px rgb(80, 68, 14);
+        color: transparent;
+        // background: rgb(221, 203, 99); 
+        // text-shadow:rgba($color-black,0.45) 1px 3px 3px,  rgba(255,255,255,0.5) 0 2px 2px;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+
+        
+  background-color: rgba(82,96,117,0.9);
+  text-shadow: rgba(255,255,255,0.5) 0 5px 6px,rgba(255,255,255,0.2) 1px 3px 3px;
         // background-color: white;
     }
 }
@@ -256,7 +266,7 @@
             
             position:relative;
             margin-bottom: 1rem;
-            line-height: 2.5rem;
+            line-height: 3rem;
             padding-left: 6rem;
             color: rgb(85, 48, 18);
             font-size: 1.8rem;
