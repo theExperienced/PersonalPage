@@ -12,7 +12,7 @@
         <div class="header__heading-container">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">daniel mizrachi</span>
-                <span class="heading-primary--sub">a diamond <span class="heading-primary--sub--special">out of</span> the rough</span>
+                <span class="heading-primary--sub">Front end developer</span>
             </h1>
         </div>
         <div class="light-beam"></div>
@@ -29,10 +29,11 @@
                     </div>
                     <div class="about__list about__list--about">
                         <ul> 
+                            <li>A fledging front-end developer</li>
                             <li>Artist by nature</li>
                             <li>A fledging front-end developer</li>
                             <li>All the while dabbling in other languages and technologies</li> 
-                            <li>Harnessing the powers of mindfulness meditation to get inspired </li>
+                            <li>Harnessing the benefits of mindfulness meditation to get inspired </li>
                             <li>On the lookout for cutting edge, cool CSS features (Nevermind Chrome is the sole supporting browser)</li>
                            
                            
@@ -60,6 +61,7 @@
             </div>
         </section>
         <section class="main__section main__section--works">
+            <div class="bg-overlay"></div>
             <div class="works-container">
                 <div class="h2-container">
                     <h2 class="h2">
@@ -112,6 +114,8 @@
                 // field.addEventListener('transitionend', () => {
                 //     field.classList.add('faded');
                 // });
+                
+                field.setAttribute('autocomplete', 'off');
                 field.addEventListener('focus', ()=> {
                     // field.previousElementSibling.classList.add('faded-out');
                     field.setAttribute('placeholder', ' ');

@@ -237,7 +237,7 @@ a:focus {
       border-width: 1px 0;
       border-color: rgba(0, 0, 0, 0.35);
       border-style: solid;
-      background: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 30%, transparent 30%), linear-gradient(20deg, rgba(255, 255, 255, 0.1) 10%, transparent 10%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(28deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(38deg, rgba(255, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(138deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(-52deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(40deg, rgba(255, 255, 255, 0.1) 80%, transparent 80%), linear-gradient(-40deg, rgba(0, 0, 0, 0.1) 80%, transparent 80%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(80deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(110deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 60%, transparent 60%), linear-gradient(50deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%), conic-gradient(at 45% 45%, #1e55d9 10%, #540bba 25%, #ba0b42 70%, #1e55d9);
+      background-image: repeating-conic-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 3%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 7%, rgba(0, 0, 0, 0.5) 9%), linear-gradient(10deg, rgba(0, 0, 0, 0.1) 30%, transparent 30%), linear-gradient(20deg, rgba(255, 255, 255, 0.1) 10%, transparent 10%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(28deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(38deg, rgba(255, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(138deg, rgba(0, 0, 0, 0.1) 40%, transparent 40%), linear-gradient(8deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(-52deg, rgba(0, 0, 0, 0.1) 60%, transparent 60%), linear-gradient(40deg, rgba(255, 255, 255, 0.1) 80%, transparent 80%), linear-gradient(-40deg, rgba(0, 0, 0, 0.1) 80%, transparent 80%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(80deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(110deg, rgba(255, 255, 255, 0.1) 70%, transparent 70%), linear-gradient(70deg, rgba(255, 255, 255, 0.1) 60%, transparent 60%), linear-gradient(50deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%), conic-gradient(at 45% 45%, #1e55d9 10%, #540bba 25%, #ba0b42 70%, #1e55d9);
       background-attachment: fixed;
       position: relative;
       overflow: hidden; }
@@ -293,6 +293,7 @@ a:focus {
     .contact-me-form__field--name, .contact-me-form__field--mail {
       height: 5rem; }
     .contact-me-form__field--textarea {
+      font-size: 3rem;
       padding: 0.9rem;
       resize: vertical;
       overflow: auto;
@@ -304,7 +305,7 @@ a:focus {
       position: absolute;
       font-weight: 100;
       left: 0.7rem;
-      top: 50%;
+      top: 100%;
       transform: translateY(-50%);
       transform-origin: left;
       transition: all .15s linear; }
